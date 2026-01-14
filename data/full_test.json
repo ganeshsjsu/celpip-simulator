@@ -1,0 +1,639 @@
+[
+  {
+    "part_id": "p1",
+    "title": "Reading Part 1: Reading Correspondence",
+    "timer_seconds": 660,
+    "layout_type": "split_html_form",
+    "left_panel_data": {
+      "html_content": "<h3>Subject: Claim #9921 - Determination</h3><p><strong>From:</strong> Regional Insurance Co.</p><p>Dear Mr. Henderson,</p><p>We have completed the review of your claim regarding the theft of electronic equipment from your vehicle on August 14th. We have approved the replacement cost for the laptop ($1,200) and the noise-canceling headphones ($350), as these fall within your \"Personal Property\" coverage limits.</p><p>However, we are unable to reimburse you for the professional camera equipment listed in your report. According to your policy (Section 4.2), items used primarily for \"business or commercial generation of income\" are excluded from standard auto policies and require a separate commercial rider. Since you listed \"Wedding Photography\" as your occupation, and the camera is a high-end model typically used by professionals, it falls under this exclusion.</p><p>Additionally, regarding the smashed window, your deductible is $500. Since the cost of glass repair was $450, it is below the deductible threshold, and therefore no payout will be issued for the vehicle damage itself.</p><p>A cheque for $1,550 will be mailed to you within 5 business days.</p><p>Regards,<br/>Claims Adjuster</p>"
+    },
+    "right_panel_data": {
+      "section_1": {
+        "type": "multiple_choice",
+        "instructions": "Using the drop-down menu, choose the best option.",
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "The insurance company denied the camera claim because...",
+            "options": [
+              "it was too expensive",
+              "it was stolen",
+              "it is for business use",
+              "Mr. Henderson lost the receipt"
+            ],
+            "correct_index": 2,
+            "explanation": "Policy excludes items used for 'business generation of income'."
+          },
+          {
+            "id": "q2",
+            "prompt": "Why is the window repair not covered?",
+            "options": [
+              "The glass is cheap",
+              "It costs less than the deductible",
+              "It was not broken",
+              "The policy expired"
+            ],
+            "correct_index": 1,
+            "explanation": "Repair ($450) is less than the deductible ($500)."
+          },
+          {
+            "id": "q3",
+            "prompt": "What items were approved for reimbursement?",
+            "options": [
+              "Camera and Laptop",
+              "Laptop and Headphones",
+              "Window and Camera",
+              "Headphones only"
+            ],
+            "correct_index": 1,
+            "explanation": "Text mentions approval for 'laptop ($1,200) and noise-canceling headphones ($350)'."
+          },
+          {
+            "id": "q4",
+            "prompt": "Mr. Henderson's listed occupation is...",
+            "options": [
+              "Claims Adjuster",
+              "Wedding Photographer",
+              "Tech Support",
+              "Journalist"
+            ],
+            "correct_index": 1,
+            "explanation": "Text states: 'Since you listed Wedding Photography as your occupation'."
+          },
+          {
+            "id": "q5",
+            "prompt": "When will the payment be sent?",
+            "options": [
+              "Immediately",
+              "Within 5 business days",
+              "Next month",
+              "After he appeals"
+            ],
+            "correct_index": 1,
+            "explanation": "Text states: 'mailed to you within 5 business days'."
+          },
+          {
+            "id": "q6",
+            "prompt": "The tone of this letter is...",
+            "options": [
+              "Accusatory",
+              "Professional but firm",
+              "Apologetic and weak",
+              "Friendly and casual"
+            ],
+            "correct_index": 1,
+            "explanation": "The writer uses formal language ('unable to reimburse', 'according to your policy') without being rude."
+          }
+        ]
+      },
+      "section_2": {
+        "type": "fill_in_the_blank",
+        "instructions": "Here is a response. Complete it by filling in the blanks.",
+        "content_blocks": [
+          {
+            "type": "text",
+            "value": "Dear Adjuster, I have received your decision. While I am relieved that the "
+          },
+          {
+            "type": "dropdown",
+            "id": "q7",
+            "options": [
+              "camera",
+              "laptop",
+              "window",
+              "car"
+            ],
+            "correct_value": "laptop",
+            "explanation": "The letter explicitly states approval for the laptop replacement."
+          },
+          {
+            "type": "text",
+            "value": " is covered, I am very disappointed about the camera equipment. I understand the policy regarding business items; however, I only use that specific camera for "
+          },
+          {
+            "type": "dropdown",
+            "id": "q8",
+            "options": [
+              "weddings",
+              "hobby photography",
+              "news reporting",
+              "selling online"
+            ],
+            "correct_value": "hobby photography",
+            "explanation": "He is arguing that it is NOT for business, so it must be for personal/hobby use."
+          },
+          {
+            "type": "text",
+            "value": ", not my main job. Regarding the window, I didn't realize my deductible was so "
+          },
+          {
+            "type": "dropdown",
+            "id": "q9",
+            "options": [
+              "low",
+              "high",
+              "fair",
+              "complex"
+            ],
+            "correct_value": "high",
+            "explanation": "The deductible ($500) was higher than the repair cost, preventing coverage."
+          },
+          {
+            "type": "text",
+            "value": ". In the future, I will lower it. Please let me know how I can "
+          },
+          {
+            "type": "dropdown",
+            "id": "q10",
+            "options": [
+              "cancel my policy",
+              "appeal this decision",
+              "buy a new car",
+              "sue you"
+            ],
+            "correct_value": "appeal this decision",
+            "explanation": "He is asking for a way to challenge ('appeal') the camera classification."
+          },
+          {
+            "type": "text",
+            "value": " regarding the camera classification. I look forward to receiving the cheque for "
+          },
+          {
+            "type": "dropdown",
+            "id": "q11",
+            "options": [
+              "$450",
+              "$500",
+              "$1,550",
+              "$2,000"
+            ],
+            "correct_value": "$1,550",
+            "explanation": "$1,200 (laptop) + $350 (headphones) = $1,550."
+          },
+          {
+            "type": "text",
+            "value": ". Regards, Mr. Henderson"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "part_id": "p2",
+    "title": "Reading Part 2: Reading to Apply a Diagram",
+    "timer_seconds": 480,
+    "layout_type": "split_image_form",
+    "left_panel_data": {
+      "image_src": "/images/test12_p2.png",
+      "image_generation_prompt": "Infographic flyer design titled 'Office Catering Menu - \"The Lunch Box\"'. Subtitle 'All platters serve 10 people.' The flyer is divided into three distinct colored boxes lined up horizontally. \n\nBox 1 (Left, Green header): Titled '1. The Classic Deli ($80)'. Content list: 'Roast Beef on Rye (Contains Gluten)', 'Ham & Swiss on White (Contains Dairy)', 'Turkey Club on Whole Wheat'. Fine print note at bottom of box: '*Comes with mayo packets on the side.*' \n\nBox 2 (Middle, Yellow header): Titled '2. The Garden Fresh ($90)'. Content list: 'Egg Salad Wraps (Vegetarian)', 'Cucumber & Cream Cheese (Contains Dairy)', 'Roasted Veggie Sandwich (Vegan)'. Fine print warning box at bottom of box in red text: '*Warning: Made in a facility that processes nuts.*' \n\nBox 3 (Right, Red header): Titled '3. The Premium Power ($120)'. Content list: 'Grilled Salmon Filet (Gluten-Free)', 'Chicken Quinoa Bowl (Dairy-Free)', 'Steak Strips with Peanut Sauce (Contains Nuts)'. Fine print note at bottom of box: '*Includes fresh fruit skewers.*' \n\nAt the very bottom of the entire flyer, a general notes section: 'Notes: Gluten-free bread available for sandwiches (+$10 per platter). Delivery is free for orders over $200.'"
+    },
+    "right_panel_data": {
+      "section_1": {
+        "type": "fill_in_the_blank",
+        "instructions": "Read the email regarding the diagram. Complete the email.",
+        "content_blocks": [
+          {
+            "type": "text",
+            "value": "<strong>From:</strong> Assistant <br/> <strong>To:</strong> Manager <br/><br/> Hi Boss, I'm ordering for the client meeting. We have a few dietary issues. One client has a severe **nut allergy**, so we absolutely cannot order the "
+          },
+          {
+            "type": "dropdown",
+            "id": "q1",
+            "options": [
+              "Classic Deli",
+              "Garden Fresh",
+              "Premium Power"
+            ],
+            "correct_value": "Premium Power",
+            "explanation": "Premium Power explicitly lists 'Steak Strips with Peanut Sauce (Contains Nuts)'."
+          },
+          {
+            "type": "text",
+            "value": " because of the sauce, and even the "
+          },
+          {
+            "type": "dropdown",
+            "id": "q2",
+            "options": [
+              "Classic Deli",
+              "Garden Fresh",
+              "Premium Power"
+            ],
+            "correct_value": "Garden Fresh",
+            "explanation": "Garden Fresh has a warning: 'Made in a facility that processes nuts'."
+          },
+          {
+            "type": "text",
+            "value": " is risky because of the facility warning. That leaves us with the first option. However, another client is **lactose intolerant** (no dairy). If we get the Classic Deli, they can't eat the "
+          },
+          {
+            "type": "dropdown",
+            "id": "q3",
+            "options": [
+              "Roast Beef",
+              "Ham & Swiss",
+              "Turkey Club"
+            ],
+            "correct_value": "Ham & Swiss",
+            "explanation": "Ham & Swiss is explicitly labeled '(Contains Dairy)'."
+          },
+          {
+            "type": "text",
+            "value": ". Do you think we should just order two different platters? If we do, do we still have to pay for "
+          },
+          {
+            "type": "dropdown",
+            "id": "q4",
+            "options": [
+              "gluten-free bread",
+              "delivery",
+              "mayo",
+              "fruit"
+            ],
+            "correct_value": "delivery",
+            "explanation": "Two platters ($80 + $90 = $170) is under the $200 threshold for free delivery."
+          },
+          {
+            "type": "text",
+            "value": "? Also, does the gluten-free bread upgrade cost "
+          },
+          {
+            "type": "dropdown",
+            "id": "q5",
+            "options": [
+              "nothing",
+              "$5",
+              "$10",
+              "$20"
+            ],
+            "correct_value": "$10",
+            "explanation": "Notes say '+$10 per platter' for GF bread."
+          },
+          {
+            "type": "text",
+            "value": " extra?"
+          }
+        ]
+      },
+      "section_2": {
+        "type": "fill_in_the_blank",
+        "instructions": "Complete the response.",
+        "content_blocks": [
+          {
+            "type": "text",
+            "value": "Good catch on the allergy. Let's stick to the **Classic Deli**. The Ham & Swiss has cheese, so that's out for him. He can eat the "
+          },
+          {
+            "type": "dropdown",
+            "id": "q6",
+            "options": [
+              "Roast Beef",
+              "Cucumber",
+              "Veggie",
+              "Quinoa"
+            ],
+            "correct_value": "Roast Beef",
+            "explanation": "Roast Beef is in the Classic Deli and is not listed as containing dairy."
+          },
+          {
+            "type": "text",
+            "value": " though. Since we are ordering two platters ($160 total), we will unfortunately have to pay for "
+          },
+          {
+            "type": "dropdown",
+            "id": "q7",
+            "options": [
+              "delivery",
+              "sauce",
+              "parking",
+              "tips"
+            ],
+            "correct_value": "delivery",
+            "explanation": "The total is below $200."
+          },
+          {
+            "type": "text",
+            "value": ". Don't forget to ask for the extra "
+          },
+          {
+            "type": "dropdown",
+            "id": "q8",
+            "options": [
+              "mayo",
+              "fruit",
+              "napkins",
+              "plates"
+            ],
+            "correct_value": "mayo",
+            "explanation": "The Classic Deli box notes: '*Comes with mayo packets on the side.*'"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "part_id": "p3",
+    "title": "Reading Part 3: Reading for Information",
+    "timer_seconds": 540,
+    "layout_type": "split_html_form",
+    "left_panel_data": {
+      "html_content": "<p><strong>A.</strong> The precise origins of coffee are shrouded in legend, but most historians agree it can be traced back to the ancient coffee forests on the Ethiopian plateau. The most famous story involves a 9th-century goatherd named Kaldi, who noticed his flock becoming energetic and \"dancing\" after eating bright red berries from a certain bush. Curious, Kaldi tried the fruit himself and experienced a similar alertness. He brought his discovery to a local monastery, where monks began using the drink to keep them awake during long hours of evening prayer.</p><p><strong>B.</strong> By the 15th century, coffee cultivation and trade had spread across the Red Sea to the Arabian Peninsula. It was here, in Yemen, that coffee beans were first roasted and brewed similarly to how they are prepared today. The drink, known as \"qahwah\", became deeply ingrained in local culture. Public coffee houses sprang up in cities across the Near East. These establishments were not just for drinking but became vibrant social hubs for listening to music, playing chess, and discussing news, earning them the nickname \"schools of the wise.\"</p><p><strong>C.</strong> Coffee reached Europe in the 17th century. Initially, it was met with suspicion, with some priests calling it the \"bitter invention of Satan.\" However, after Pope Clement VIII tasted it and famously gave it his blessing, its popularity exploded. Coffee houses quickly became centers of social activity in major cities like London and Paris. In England, they were often dubbed \"penny universities\" because for the price of a penny cup of coffee, one could engage in stimulating conversation and learn the latest news.</p><p><strong>D.</strong> Today, coffee is a massive global industry and one of the world's most traded commodities. The commercial market is dominated by two main species of the coffee plant: Arabica, prized for its complex flavor and aroma, and Robusta, which is hardier and often used in instant coffee. However, the industry faces significant challenges. Climate change threatens coffee-growing regions, and there is a growing movement towards sustainable farming and \"fair trade\" practices to ensure farmers in developing nations receive a living wage.</p>"
+    },
+    "right_panel_data": {
+      "section_1": {
+        "type": "matching",
+        "instructions": "Decide which paragraph, A to D, has the information given in each statement below. Select E if the information is not given.",
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "Mention of religious figures using the drink for wakefulness.",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "correct_index": 0,
+            "explanation": "Paragraph A mentions monks using it to 'keep them awake during long hours of evening prayer'."
+          },
+          {
+            "id": "q2",
+            "prompt": "Details about the initial negative reception of coffee in Europe.",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "correct_index": 2,
+            "explanation": "Paragraph C mentions priests calling it the 'bitter invention of Satan'."
+          },
+          {
+            "id": "q3",
+            "prompt": "A nickname given to coffee houses in the Near East reflecting their intellectual nature.",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "correct_index": 1,
+            "explanation": "Paragraph B says they were nicknamed 'schools of the wise'."
+          },
+          {
+            "id": "q4",
+            "prompt": "A comparison of caffeine levels between different coffee species.",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "correct_index": 4,
+            "explanation": "Paragraph D mentions Arabica and Robusta, but does NOT compare their caffeine content."
+          },
+          {
+            "id": "q5",
+            "prompt": "The location where the technique of roasting beans was developed.",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "correct_index": 1,
+            "explanation": "Paragraph B states: 'It was here, in Yemen, that coffee beans were first roasted'."
+          },
+          {
+            "id": "q6",
+            "prompt": "Mention of environmental threats to the modern coffee industry.",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "correct_index": 3,
+            "explanation": "Paragraph D mentions 'Climate change threatens coffee-growing regions'."
+          },
+          {
+            "id": "q7",
+            "prompt": "A story about animals leading to the discovery of the plant.",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "correct_index": 0,
+            "explanation": "Paragraph A tells the story of Kaldi and his 'flock becoming energetic'."
+          },
+          {
+            "id": "q8",
+            "prompt": "Statistics showing coffee is the number one traded global commodity.",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "correct_index": 4,
+            "explanation": "Paragraph D says it is 'one of the most traded,' but does not say it is number one or provide statistics."
+          },
+          {
+            "id": "q9",
+            "prompt": "Bibles were previously written in a language commoners didn't speak.",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "correct_index": 4,
+            "explanation": "This fact is historically true but is NOT in the text provided."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "part_id": "p4",
+    "title": "Reading Part 4: Reading for Viewpoints",
+    "timer_seconds": 720,
+    "layout_type": "split_html_form",
+    "left_panel_data": {
+      "html_content": "<h3>Scooters on the Sidewalk: Innovation or Menace?</h3><p>The proliferation of electric scooters (e-scooters) in major metropolitan areas has sparked a contentious debate about the future of urban mobility. Proponents view these dockless devices as a revolutionary solution to the \"last-mile problem,\" filling the gap between public transit stops and final destinations.</p><p>Urban planner Marcus Thorne argues that e-scooters are essential for reducing car dependency. \"Every scooter trip is potentially one less car trip,\" Thorne asserts. He points to data from a recent pilot program in Denver, which showed a 10% reduction in short-distance taxi rides after scooters were introduced. Thorne believes that with proper infrastructure, such as dedicated lanes, micro-mobility can significantly lower carbon emissions and traffic congestion.</p><p>However, disability rights advocate Sarah Jenkins describes the current situation as \"anarchy.\" She highlights that scooters are frequently left blocking wheelchair ramps and sidewalks, creating hazardous obstacles for the visually impaired and those with limited mobility. \"Public spaces are being monetized by private companies at the expense of pedestrian safety,\" Jenkins contends. She also cites a spike in emergency room visits related to scooter accidents, noting that many riders do not wear helmets and ignore traffic laws.</p><p>Jenkins suggests that until strict regulations are enforced, including designated parking zones and hefty fines for sidewalk riding, the devices should be banned. Thorne counters that banning them is a step backward, urging cities to instead adapt their streets to accommodate this new mode of transport.</p>"
+    },
+    "right_panel_data": {
+      "section_1": {
+        "type": "multiple_choice",
+        "instructions": "Using the drop-down menu, choose the best option.",
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "The main disagreement is between...",
+            "options": [
+              "drivers and pedestrians",
+              "efficiency and safety",
+              "private companies and the government",
+              "young and old people"
+            ],
+            "correct_index": 1,
+            "explanation": "Thorne argues for efficiency (emissions/traffic), while Jenkins argues for safety (pedestrians/hazards)."
+          },
+          {
+            "id": "q2",
+            "prompt": "Marcus Thorne supports e-scooters because...",
+            "options": [
+              "they are fun to ride",
+              "they reduce car usage",
+              "they are cheap",
+              "they help the disabled"
+            ],
+            "correct_index": 1,
+            "explanation": "Thorne states: 'Every scooter trip is potentially one less car trip'."
+          },
+          {
+            "id": "q3",
+            "prompt": "What specific danger does Sarah Jenkins mention?",
+            "options": [
+              "Batteries exploding",
+              "Scooters blocking paths",
+              "High rental costs",
+              "Scooters being stolen"
+            ],
+            "correct_index": 1,
+            "explanation": "She highlights scooters 'blocking wheelchair ramps and sidewalks'."
+          },
+          {
+            "id": "q4",
+            "prompt": "How does Thorne respond to the call for a ban?",
+            "options": [
+              "He agrees it is necessary",
+              "He suggests adapting streets instead",
+              "He blames the riders",
+              "He ignores the comment"
+            ],
+            "correct_index": 1,
+            "explanation": "Thorne counters by urging cities to 'adapt their streets to accommodate this'."
+          },
+          {
+            "id": "q5",
+            "prompt": "Jenkins believes public spaces are being...",
+            "options": [
+              "improved",
+              "exploited for profit",
+              "abandoned",
+              "modernized"
+            ],
+            "correct_index": 1,
+            "explanation": "She says spaces are being 'monetized by private companies'."
+          }
+        ]
+      },
+      "section_2": {
+        "type": "fill_in_the_blank",
+        "instructions": "Complete the comment by choosing the best option.",
+        "content_blocks": [
+          {
+            "type": "text",
+            "value": "I live downtown, and I use scooters daily to get to work. I agree with Marcus Thorne that they are a great "
+          },
+          {
+            "type": "dropdown",
+            "id": "q6",
+            "options": [
+              "toy",
+              "eco-friendly alternative",
+              "danger",
+              "business"
+            ],
+            "correct_value": "eco-friendly alternative",
+            "explanation": "Matches Thorne's argument about carbon emissions."
+          },
+          {
+            "type": "text",
+            "value": " to driving. However, I admit that Sarah Jenkins has a point about "
+          },
+          {
+            "type": "dropdown",
+            "id": "q7",
+            "options": [
+              "speed",
+              "noise",
+              "clutter",
+              "pollution"
+            ],
+            "correct_value": "clutter",
+            "explanation": "Refers to the next sentence about tripping over one (blocking the path)."
+          },
+          {
+            "type": "text",
+            "value": ". Yesterday, I tripped over one left right in front of my building. It is not the technology that is the problem; it is the "
+          },
+          {
+            "type": "dropdown",
+            "id": "q8",
+            "options": [
+              "price",
+              "weather",
+              "user behavior",
+              "battery life"
+            ],
+            "correct_value": "user behavior",
+            "explanation": "The issue is how people park them, not the machine itself."
+          },
+          {
+            "type": "text",
+            "value": ". If the city built more "
+          },
+          {
+            "type": "dropdown",
+            "id": "q9",
+            "options": [
+              "highways",
+              "parking lots",
+              "scooter lanes",
+              "sidewalks"
+            ],
+            "correct_value": "scooter lanes",
+            "explanation": "Thorne suggests 'proper infrastructure, such as dedicated lanes'."
+          },
+          {
+            "type": "text",
+            "value": " as Thorne suggests, maybe riders wouldn't be on the sidewalk. Banning them completely would be an "
+          },
+          {
+            "type": "dropdown",
+            "id": "q10",
+            "options": [
+              "overreaction",
+              "excellent idea",
+              "easy fix",
+              "economic boost"
+            ],
+            "correct_value": "overreaction",
+            "explanation": "The writer uses them daily, so they wouldn't want a ban."
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      }
+    }
+  }
+]

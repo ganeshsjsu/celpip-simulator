@@ -103,7 +103,8 @@
                             "delay",
                             "meeting"
                         ],
-                        "correct_value": "misunderstanding"
+                        "correct_value": "misunderstanding",
+                        "explanation": "Sarah is apologizing for the oversight, framing it as a misunderstanding rather than an intentional rejection."
                     },
                     {
                         "type": "text",
@@ -118,7 +119,8 @@
                             "success",
                             "choice"
                         ],
-                        "correct_value": "error"
+                        "correct_value": "error",
+                        "explanation": "She attributes the omission to a technical 'error' or mistake during the document merging process."
                     },
                     {
                         "type": "text",
@@ -133,7 +135,8 @@
                             "on the company website",
                             "in your performance review"
                         ],
-                        "correct_value": "during the verbal presentation"
+                        "correct_value": "during the verbal presentation",
+                        "explanation": "Since the printed binders cannot be changed, the compromise is to give credit verbally during the presentation."
                     },
                     {
                         "type": "text",
@@ -148,7 +151,8 @@
                             "challenged",
                             "busy"
                         ],
-                        "correct_value": "recognized"
+                        "correct_value": "recognized",
+                        "explanation": "David specifically asked for 'professional recognition', and Sarah is affirming she wants him to feel recognized."
                     },
                     {
                         "type": "text",
@@ -161,7 +165,7 @@
     {
         "part_id": "p2",
         "title": "Reading Part 2: Reading to Apply a Diagram",
-        "timer_seconds": 90,
+        "timer_seconds": 480,
         "layout_type": "split_image_form",
         "left_panel_data": {
             "image_src": "/images/test13_p2_railpass.png",
@@ -540,7 +544,8 @@
                             "marketing",
                             "speed"
                         ],
-                        "correct_value": "safety"
+                        "correct_value": "safety",
+                        "explanation": "The context mentions that 'lithium batteries are dangerous', which supports the point about safety."
                     },
                     {
                         "type": "text",
@@ -555,7 +560,8 @@
                             "innovation",
                             "taxes"
                         ],
-                        "correct_value": "privacy"
+                        "correct_value": "privacy",
+                        "explanation": "The writer discusses 'stealing data', which relates to the argument about privacy."
                     },
                     {
                         "type": "text",
@@ -570,7 +576,8 @@
                             "science",
                             "politics"
                         ],
-                        "correct_value": "greed"
+                        "correct_value": "greed",
+                        "explanation": "The writer follows up by saying 'Manufacturers just want to sell more units', implying a motivation of profit/greed."
                     },
                     {
                         "type": "text",
@@ -585,7 +592,8 @@
                             "screwdriver",
                             "license"
                         ],
-                        "correct_value": "screwdriver"
+                        "correct_value": "screwdriver",
+                        "explanation": "The context mentions tools needed to 'open their phone', implying a screwdriver or opening tool."
                     },
                     {
                         "type": "text",
@@ -600,7 +608,8 @@
                             "help",
                             "hope"
                         ],
-                        "correct_value": "control"
+                        "correct_value": "control",
+                        "explanation": "The writer concludes that preventing repairs is not about safety, but about the manufacturer maintaining control."
                     },
                     {
                         "type": "text",

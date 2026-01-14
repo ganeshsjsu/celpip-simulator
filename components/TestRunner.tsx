@@ -18,6 +18,8 @@ export default function TestRunner({ testData }: TestRunnerProps) {
     const [isScoreOverlayVisible, setIsScoreOverlayVisible] = useState(false);
     // Track the FURTHEST part reached to enforce locking of previous parts
     const [maxPartReached, setMaxPartReached] = useState(0);
+    // Store remaining time for each part: { [partIndex]: seconds }
+    const [remainingTimes, setRemainingTimes] = useState<Record<number, number>>({});
 
     const currentPart = testData[currentPartIndex];
     const isLastPart = currentPartIndex === testData.length - 1;
@@ -29,29 +31,52 @@ export default function TestRunner({ testData }: TestRunnerProps) {
     const isReadOnly = isSubmitted || currentPartIndex < maxPartReached;
 
 
-    // Initialize Timer when Part Changes
+    // Initialize Timer logic
+    // We NO LONGER reset timer purely on index change in a simple Effect, because we want to load SAVED time.
     useEffect(() => {
-        // Only reset timer if we are entering a NEW part for the first time (implied by moving forward)
-        // OR if we just want to ensure the timer for the *current* view is correct?
-        // Actually, typically in these tests, once you leave a section, its timer is done.
-        // So we reset only when currentPartIndex changes.
-        setTimeLeft(currentPart.timer_seconds);
-    }, [currentPartIndex, currentPart]);
+        // Initial load for the very first part if not set
+        if (currentPartIndex === 0 && timeLeft === 0 && !remainingTimes[0]) {
+            setTimeLeft(testData[0].timer_seconds);
+        }
+    }, []);
+
+    // Helper to switch parts safely
+    const switchToPart = (newIndex: number) => {
+        // 1. Save current time
+        const newRemainingTimes = { ...remainingTimes, [currentPartIndex]: timeLeft };
+        setRemainingTimes(newRemainingTimes);
+
+        // 2. Load next time
+        let nextTime = 0;
+        if (typeof newRemainingTimes[newIndex] === 'number') {
+            nextTime = newRemainingTimes[newIndex];
+        } else {
+            // First time entering this part
+            nextTime = testData[newIndex].timer_seconds;
+        }
+
+        setTimeLeft(nextTime);
+        setCurrentPartIndex(newIndex);
+        window.scrollTo(0, 0);
+    };
+
 
     // Timer Countdown Logic
     useEffect(() => {
         if (isSubmitted) return;
+        // Strict Locked check: If we are looking at a previous locked part, typically we might NOT run the timer?
+        // OR we run it but it doesn't matter?
+        // User said: "once move to the next section, we can stop the timer for the prev section"
+        // If isReadOnly is true, we technically shouldn't be ticking the timer for THAT part.
+        // However, if we are reviewing, maybe hide it?
+
+        if (isReadOnly && timeLeft > 0) {
+            // Optional: Pause timer for ReadOnly parts? 
+            // Let's just Return to stop ticking.
+            return;
+        }
+
         if (timeLeft <= 0) {
-            // TIMER EXPIRED LOGIC
-            // Avoid infinite loop by checking if we already handled it (e.g. by moving next)
-            // But we must capture the moment it hits 0.
-
-            // If time is 0 and we are not submitted, we MUST advance.
-            // But we need to use a timeout or check specifically for the transition to 0.
-            // The interval below handles the decrement. We check for 0 INSIDE the interval or effect?
-            // Better to check in the Interval closure or a separate effect.
-            // However, to keep it simple:
-
             return;
         }
 
@@ -72,8 +97,20 @@ export default function TestRunner({ testData }: TestRunnerProps) {
                         // Move to next part & LOCK current one
                         // Only if we are currently looking at the latest part (which we should be if timer is running)
                         if (currentPartIndex === maxPartReached) {
+                            // Save current time as 0
+                            setRemainingTimes(prevTimes => ({ ...prevTimes, [currentPartIndex]: 0 }));
+
                             setMaxPartReached(p => p + 1);
-                            setCurrentPartIndex(p => p + 1);
+
+                            // Switch to next part
+                            const nextIndex = currentPartIndex + 1;
+
+                            // Determine next time (likely full duration)
+                            let nextTime = testData[nextIndex].timer_seconds;
+                            // (Edge case: if we somehow visited it before? Unlikely in strict mode.)
+
+                            setTimeLeft(nextTime);
+                            setCurrentPartIndex(nextIndex);
                             window.scrollTo(0, 0);
                         }
                     }
@@ -84,7 +121,7 @@ export default function TestRunner({ testData }: TestRunnerProps) {
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [timeLeft, isSubmitted, isLastPart, currentPartIndex, maxPartReached]);
+    }, [timeLeft, isSubmitted, isLastPart, currentPartIndex, maxPartReached, isReadOnly, testData, remainingTimes]);
 
 
     const formatTime = (seconds: number) => {
@@ -102,8 +139,7 @@ export default function TestRunner({ testData }: TestRunnerProps) {
     const handleNext = () => {
         // If we are reviewing previous parts (read-only), just let them go forward freely until they hit the "wall"
         if (currentPartIndex < maxPartReached) {
-            setCurrentPartIndex(prev => prev + 1);
-            window.scrollTo(0, 0);
+            switchToPart(currentPartIndex + 1);
             return;
         }
 
@@ -120,15 +156,13 @@ export default function TestRunner({ testData }: TestRunnerProps) {
 
         if (confirm("You are about to move to the next section. You will NOT be able to return to change your answers in this section. Do you want to proceed?")) {
             setMaxPartReached(prev => prev + 1);
-            setCurrentPartIndex(prev => prev + 1);
-            window.scrollTo(0, 0);
+            switchToPart(currentPartIndex + 1);
         }
     };
 
     const handlePrevious = () => {
         if (currentPartIndex > 0) {
-            setCurrentPartIndex(prev => prev - 1);
-            window.scrollTo(0, 0);
+            switchToPart(currentPartIndex - 1);
         }
     };
 

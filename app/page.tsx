@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TestRunner from '../components/TestRunner';
 import test1Data from '../data/Test1.json';
 import test2Data from '../data/Test2.json';
@@ -11,20 +11,31 @@ const TESTS = [
     id: 'test1',
     title: 'Practice Test 1',
     description: 'Topics: Insurance Claim, Catering Menu, Coffee History, Scooters Debate.',
-    data: test1Data,
-    badge: 'Popular'
+    data: test1Data
   },
   {
     id: 'test2',
     title: 'Practice Test 2',
     description: 'Topics: Office Credit, Rail Passes, Telegraph Cable, Right to Repair.',
-    data: test2Data,
-    badge: 'New'
+    data: test2Data
   }
 ];
 
 export default function Home() {
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
+  const [scores, setScores] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    // Load scores from localStorage
+    const newScores: Record<string, string> = {};
+    TESTS.forEach(test => {
+      const score = localStorage.getItem(`celpip_score_${test.id}`);
+      if (score) {
+        newScores[test.id] = score;
+      }
+    });
+    setScores(newScores);
+  }, [selectedTestId]); // Reload scores when returning to dashboard
 
   const selectedTest = TESTS.find(t => t.id === selectedTestId);
   // Ensure data matches the expected type (array of parts)
@@ -57,10 +68,12 @@ export default function Home() {
                     <h2 className="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors">
                       {test.title}
                     </h2>
-                    {test.badge && (
-                      <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full ${test.badge === 'New' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'}`}>
-                        {test.badge}
-                      </span>
+                    {/* Last Score Display */}
+                    {scores[test.id] && (
+                      <div className="text-right">
+                        <div className="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Last Score</div>
+                        <div className="text-lg font-bold text-blue-600">{scores[test.id]}</div>
+                      </div>
                     )}
                   </div>
                   <p className="text-gray-600 mb-6 leading-relaxed">
@@ -102,16 +115,17 @@ export default function Home() {
         <div className="relative">
           {/* Allow user to go back to dashboard (WARNING: State will be lost, which is expected behavior for 'Quitting') */}
           <div className="absolute top-0 left-0 w-full h-[64px] pointer-events-none z-20 max-w-[200px]">
-            {/* We place a transparent overlay or just hack the position. 
+            {/* We place a transparent overlay or just hack the position.
                    Actually, better to inject a "Back" button into TestRunner or just rely on Browser Back?
                    Browser Back won't work nicely with SPA.
-                   Let's add a small 'Exit' button overlay in the top left or just render a simple button here if z-index allows. 
+                   Let's add a small 'Exit' button overlay in the top left or just render a simple button here if z-index allows.
                */}
           </div>
 
           <TestRunner
             key={selectedTestId} // Force remount when test changes
             testData={activeTestData}
+            testId={selectedTestId!}
           />
 
           {/* Temporary Floating Exit Button (only for convenience, TestRunner header covers top) */}

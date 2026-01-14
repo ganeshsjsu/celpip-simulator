@@ -7,9 +7,10 @@ import QuestionForm from './QuestionForm';
 
 interface TestRunnerProps {
     testData: any[]; // Array of parts
+    testId: string;
 }
 
-export default function TestRunner({ testData }: TestRunnerProps) {
+export default function TestRunner({ testData, testId }: TestRunnerProps) {
     // State
     const [currentPartIndex, setCurrentPartIndex] = useState(0);
     const [timeLeft, setTimeLeft] = useState(0);
@@ -217,6 +218,13 @@ export default function TestRunner({ testData }: TestRunnerProps) {
     };
 
     const { score, total } = isSubmitted ? calculateScore() : { score: 0, total: 0 };
+
+    // SAVE SCORE EFFECT
+    useEffect(() => {
+        if (isSubmitted) {
+            localStorage.setItem(`celpip_score_${testId}`, `${score}/${total}`);
+        }
+    }, [isSubmitted, score, total, testId]);
 
     // Prepare normalized sections for Child Component
     const currentSectionsData = currentPart.right_panel_data.sections || currentPart.right_panel_data;

@@ -107,6 +107,10 @@ export default function Home() {
           <div className="mt-12 text-center text-gray-400 text-sm">
             More practice tests coming soon.
           </div>
+
+          <div className="mt-16 border-t border-gray-200 pt-8 text-center text-gray-500 font-medium">
+            Made by Ganesh with ❤️ for Ish
+          </div>
         </div>
       )}
 

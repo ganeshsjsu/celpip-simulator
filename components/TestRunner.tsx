@@ -77,47 +77,63 @@ export default function TestRunner({ testData, testId }: TestRunnerProps) {
             return;
         }
 
-        if (timeLeft <= 0) {
-            return;
-        }
+        // REMOVED: if (timeLeft <= 0) return; 
+        // We let the interval run once more so it can detect "prev <= 0" and trigger cleanup/advance.
 
         const timer = setInterval(() => {
             setTimeLeft((prev) => {
-                const newVal = prev - 1;
-
-                // --- AUTO ADVANCE ON TIMEOUT ---
-                if (newVal < 0) {
+                if (prev <= 0) {
                     clearInterval(timer);
 
-                    // Logic to move next automatically
-                    if (isLastPart) {
-                        // Finish Test
-                        setIsSubmitted(true);
-                        setIsScoreOverlayVisible(true);
-                    } else {
-                        // Move to next part & LOCK current one
-                        // Only if we are currently looking at the latest part (which we should be if timer is running)
-                        if (currentPartIndex === maxPartReached) {
-                            // Save current time as 0
-                            setRemainingTimes(prevTimes => ({ ...prevTimes, [currentPartIndex]: 0 }));
+                    // --- AUTO ADVANCE ON TIMEOUT ---
+                    // We check this inside the callback to ensure we catch the '0' moment exactly once.
 
-                            setMaxPartReached(p => p + 1);
+                    // Only logic-trigger if strictly on the active part (not just some old part logic)
+                    // But wait, if we are here, we are not read-only, so we must be on active part?
+                    // Verify just in case.
+                    if (!isSubmitted) { // Double check
+                        if (isLastPart) {
+                            // Finish Test
+                            setIsSubmitted(true);
+                            setIsScoreOverlayVisible(true);
+                        } else {
+                            // Move to next part & LOCK current one
+                            if (currentPartIndex === maxPartReached) {
+                                // Save current time as 0
+                                setRemainingTimes(prevTimes => ({ ...prevTimes, [currentPartIndex]: 0 }));
 
-                            // Switch to next part
-                            const nextIndex = currentPartIndex + 1;
+                                setMaxPartReached(p => p + 1);
 
-                            // Determine next time (likely full duration)
-                            let nextTime = testData[nextIndex].timer_seconds;
-                            // (Edge case: if we somehow visited it before? Unlikely in strict mode.)
+                                // Switch to next part
+                                const nextIndex = currentPartIndex + 1;
 
-                            setTimeLeft(nextTime);
-                            setCurrentPartIndex(nextIndex);
-                            window.scrollTo(0, 0);
+                                // IDEMPOTENT UPDATE: Explicitly set maxPartReached to the next index
+                                // This prevents double-increment bugs if this callback fires multiple times
+                                setMaxPartReached(nextIndex);
+
+                                // Determine next time (likely full duration)
+                                let nextTime = testData[nextIndex].timer_seconds;
+
+                                // CRITICAL: We must return the NEXT time so 'timeLeft' updates to new value
+                                // Otherwise it stays 0 and we get stuck?
+                                // But we are setting 'timeLeft' via setTimeLeft inside switchToPart logic?
+                                // No, we are INSIDE setTimeLeft updater.
+                                // We cannot call 'switchToPart' easily here because it sets state?
+                                // Actually we CAN call other state setters.
+
+                                // However, returning a value here sets 'timeLeft'.
+                                // If we call setCurrentPartIndex, that triggers re-render.
+                                // If we return 'nextTime', that sets timeLeft.
+
+                                setCurrentPartIndex(nextIndex);
+                                window.scrollTo(0, 0);
+                                return nextTime;
+                            }
                         }
                     }
-                    return 0;
+                    return 0; // Fallback if not auto-advancing (e.g. submitted)
                 }
-                return newVal;
+                return prev - 1;
             });
         }, 1000);
 
@@ -156,8 +172,10 @@ export default function TestRunner({ testData, testId }: TestRunnerProps) {
         }
 
         if (confirm("You are about to move to the next section. You will NOT be able to return to change your answers in this section. Do you want to proceed?")) {
-            setMaxPartReached(prev => prev + 1);
-            switchToPart(currentPartIndex + 1);
+            // Explicitly set to next index for safety
+            const nextIndex = currentPartIndex + 1;
+            setMaxPartReached(nextIndex);
+            switchToPart(nextIndex);
         }
     };
 
@@ -257,7 +275,7 @@ export default function TestRunner({ testData, testId }: TestRunnerProps) {
 
                 <div className="flex items-center space-x-4 md:space-x-6">
                     {!isSubmitted && (
-                        <div className={`hidden md:block text-xl font-mono font-bold ${timeLeft < 60 ? 'text-red-400 animate-pulse' : 'text-blue-300'}`}>
+                        <div className={`hidden md:block text-xl font-mono font-bold ${timeLeft < 60 ? 'text-red-400' : 'text-blue-300'}`}>
                             Time Remaining: {formatTime(timeLeft)}
                         </div>
                     )}

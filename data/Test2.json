@@ -161,7 +161,7 @@
     {
         "part_id": "p2",
         "title": "Reading Part 2: Reading to Apply a Diagram",
-        "timer_seconds": 480,
+        "timer_seconds": 90,
         "layout_type": "split_image_form",
         "left_panel_data": {
             "image_src": "/images/test13_p2_railpass.png",

@@ -1,0 +1,613 @@
+[
+    {
+        "part_id": "p1",
+        "title": "Reading Part 1: Reading Correspondence",
+        "timer_seconds": 660,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Subject: Credit for the Q3 Market Analysis Report</h3><p><strong>To:</strong> Sarah Jenkins, Department Head<br/><strong>From:</strong> David Chen, Junior Analyst</p><p>Dear Ms. Jenkins,</p><p>I am writing to address a concern regarding the finalized Q3 Market Analysis Report that was circulated yesterday. While I am pleased the report is finished ahead of the client presentation next week, I was dismayed to see that the cover page and the internal citations solely list Ben Carter as the author.</p><p>As you know, I spent the last three weeks compiling the primary data sets and drafting sections 2 through 4, which constitute the bulk of the analysis. Ben was responsible for the executive summary and final formatting. During yesterday’s team meeting, you specifically praised Ben for the \"depth of data analysis,\" which I found disheartening given my significant contribution to that specific area.</p><p>I understand that collaboration is key, but professional recognition is vital for my career progression here. I have spoken to Ben, and he mentioned it was an oversight during the final compilation.</p><p>Before this document goes to the external client on Tuesday, I requested that the authorship be officially amended to reflect it as a joint report. I believe this is a fair reflection of the work put in.</p><p>Regards,<br/>David Chen</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "David is writing to Sarah mainly to...",
+                        "options": [
+                            "ask for a promotion",
+                            "complain about Ben's work ethic",
+                            "ensure he receives proper credit",
+                            "delay the client presentation"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "He wants the report amended to reflect his contributions."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "What part of the report did David NOT write?",
+                        "options": [
+                            "The primary data sets",
+                            "Sections 2 through 4",
+                            "The executive summary",
+                            "The bulk of the analysis"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "The text says 'Ben was responsible for the executive summary'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "How did David feel about the team meeting?",
+                        "options": [
+                            "Encouraged by the feedback",
+                            "Frustrated that his work was misattributed",
+                            "Happy for Ben's success",
+                            "Angry at Sarah's criticism"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He found it 'disheartening' that Ben was praised for data analysis David did."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "According to Ben, why was David's name omitted?",
+                        "options": [
+                            "David did not do enough work",
+                            "Sarah told him to remove it",
+                            "It was an accidental mistake",
+                            "The client only wanted one author"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Ben mentioned it was an 'oversight during the final compilation'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "When is the deadline for resolving this issue?",
+                        "options": [
+                            "Yesterday",
+                            "Today",
+                            "Next week Tuesday",
+                            "In three weeks"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Before the document goes to the external client on Tuesday."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "David's tone in the letter is...",
+                        "options": [
+                            "aggressive and threatening",
+                            "professional but assertive",
+                            "casual and friendly",
+                            "apologetic and meek"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He uses formal language ('dismayed', 'vital') to firmly state his case without being unprofessional."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Here is a response. Complete it by filling in the blanks.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Dear David, Thank you for bringing this to my attention. I apologize for the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "misunderstanding",
+                            "rejection",
+                            "delay",
+                            "meeting"
+                        ],
+                        "correct_value": "misunderstanding"
+                    },
+                    {
+                        "type": "text",
+                        "value": " regarding the authorship. I was not aware of the extent of your contribution to the data analysis sections. I have spoken with Ben, and he confirms it was a technical "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "skill",
+                            "error",
+                            "success",
+                            "choice"
+                        ],
+                        "correct_value": "error"
+                    },
+                    {
+                        "type": "text",
+                        "value": " on his part during the final merge of the documents. Unfortunately, the digital version has already been sent to the printing department for the client binders. Therefore, we cannot change the physical cover page by Tuesday. However, as a compromise, I will ensure your name is added to the digital version, and I will explicitly acknowledge your specific contributions "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "in my next email",
+                            "during the verbal presentation",
+                            "on the company website",
+                            "in your performance review"
+                        ],
+                        "correct_value": "during the verbal presentation"
+                    },
+                    {
+                        "type": "text",
+                        "value": " to the client. I value your hard work and want to ensure you feel "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "paid",
+                            "recognized",
+                            "challenged",
+                            "busy"
+                        ],
+                        "correct_value": "recognized"
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Sarah Jenkins"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p2",
+        "title": "Reading Part 2: Reading to Apply a Diagram",
+        "timer_seconds": 480,
+        "layout_type": "split_image_form",
+        "left_panel_data": {
+            "image_src": "/images/test13_p2_railpass.png",
+            "image_generation_prompt": "Infographic flyer titled 'Trans-Europa Rail Passes: 2024 Traveler Options'. The flyer has three vertical columns representing pass tiers, with a 'Fine Print' section at the bottom.\n\nColumn 1 (Silver/Grey Header): 'SILVER PASS (Flexi)'. Price: $300. Features: '5 days of travel within 1 month', '2nd Class Seating only', 'Mandatory Seat Reservation Fees ($15/trip) apply on high-speed trains'.\n\nColumn 2 (Gold/Yellow Header): 'GOLD PASS (Continuous)'. Price: $550. Features: '15 consecutive days of travel', '1st or 2nd Class Seating', '2 Free Seat Reservations included'.\n\nColumn 3 (Platinum/Blue Header): 'PLATINUM PASS (Total Freedom)'. Price: $850. Features: 'Unlimited travel for 1 month', 'Premium 1st Class + Lounge Access', 'No Reservation Fees on ANY train'.\n\nFine Print Section at bottom (Red border): '*Youth Discount (Ages 12-25): 20% off Silver & Gold prices only. *Peak Season Blackout: Silver Pass cannot be used July 1st - August 15th. *Overnight trains count as travel days based on departure date.'"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "fill_in_the_blank",
+                "instructions": "Read the email regarding the diagram. Complete the email.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "<strong>To:</strong> Travel Partner <br/> <strong>From:</strong> Mark (Age 26) <br/><br/> Hey, I'm looking at these rail passes for our trip in **July**. We have a complicated itinerary with lots of high-speed connections. First off, because we are traveling in the middle of summer, we absolutely cannot buy the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q1",
+                        "options": [
+                            "Silver Pass",
+                            "Gold Pass",
+                            "Platinum Pass"
+                        ],
+                        "correct_value": "Silver Pass",
+                        "explanation": "Fine print: 'Peak Season Blackout: Silver Pass cannot be used July 1st - August 15th'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " because of the blackout dates. That leaves the expensive ones. I know you wanted the Youth Discount, but since I turned 26 last month, I am "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q2",
+                        "options": [
+                            "eligible",
+                            "too young",
+                            "too old",
+                            "a student"
+                        ],
+                        "correct_value": "too old",
+                        "explanation": "Youth discount is for ages 12-25. Mark is 26."
+                    },
+                    {
+                        "type": "text",
+                        "value": " for that discount on the Gold pass anyway. We plan to take about 8 high-speed trains. If we get the Gold pass, we only get "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q3",
+                        "options": [
+                            "unlimited",
+                            "zero",
+                            "two",
+                            "five"
+                        ],
+                        "correct_value": "two",
+                        "explanation": "Gold Pass includes '2 Free Seat Reservations'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " free reservations, and paying $15 for the rest will add up fast. Honestly, just to avoid the hassle of reservation fees completely and get lounge access, I think we should just splurge on the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q4",
+                        "options": [
+                            "Silver Pass",
+                            "Gold Pass",
+                            "Platinum Pass"
+                        ],
+                        "correct_value": "Platinum Pass",
+                        "explanation": "Platinum is the only pass that offers 'No Reservation Fees on ANY train'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Do you agree? Also, does the Platinum pass include "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q5",
+                        "options": [
+                            "meals",
+                            "lounge access",
+                            "hotels",
+                            "taxis"
+                        ],
+                        "correct_value": "lounge access",
+                        "explanation": "Listed feature: 'Premium 1st Class + Lounge Access'."
+                    },
+                    {
+                        "type": "text",
+                        "value": "?"
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the response.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Hi Mark, Good catch on the July blackout dates. Although the Platinum pass is convenient, $850 is a lot of money. Let's look at the Gold Pass again. It gives us "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "5 days",
+                            "15 days",
+                            "unlimited days",
+                            "30 days"
+                        ],
+                        "correct_value": "15 days",
+                        "explanation": "Gold Pass: '15 consecutive days'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " of consecutive travel. Even if we have to pay for 6 extra reservations (at $15 each, that's $90), the total is still "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "cheaper than",
+                            "the same as",
+                            "more expensive than"
+                        ],
+                        "correct_value": "cheaper than",
+                        "explanation": "$550 (Gold) + $90 (Fees) = $640. Platinum is $850."
+                    },
+                    {
+                        "type": "text",
+                        "value": " the Platinum pass. Also, remember the fine print regarding our night train from Paris to Berlin: it counts as "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "zero travel days",
+                            "one travel day",
+                            "two travel days"
+                        ],
+                        "correct_value": "one travel day",
+                        "explanation": "Fine print: 'Overnight trains count as travel days based on departure date'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Let's go with Gold."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p3",
+        "title": "Reading Part 3: Reading for Information",
+        "timer_seconds": 540,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<p><strong>A.</strong> The completion of the first transatlantic telegraph cable in 1858 marked a watershed moment in global communication, effectively shrinking the world. Before this engineering marvel, a message from London to New York took at least ten days by steamship. With the cable, communication became near-instantaneous. The project was championed by American financier Cyrus Field, who persisted despite repeated, catastrophic failures. The initial success was celebrated with fireworks and parades, culminating in a message of congratulations exchanged between Queen Victoria and President James Buchanan.</p><p><strong>B.</strong> However, the jubilation was short-lived. The 1858 cable failed after only three weeks of operation. The chief electrician on the project, Wildman Whitehouse, had applied excessive voltage in an attempt to speed up the transmission, which ultimately fried the insulation. It would take another eight years, a civil war in America, and significant advancements in electrical theory—led by Lord Kelvin—before a durable connection was established in 1866. This second success utilized the massive steamship <em>Great Eastern</em>, the only vessel afloat capable of carrying the thousands of miles of heavy cable required.</p><p><strong>C.</strong> The impact of the cable on commerce was profound. For the first time, stock prices in London and New York could be synchronized within minutes rather than weeks. This led to the creation of a truly global market but also increased market volatility. Merchants who previously relied on arbitrage—buying goods cheap in one market and selling them dear in another before news traveled—found their advantage erased. The cable also revolutionized journalism; news of the Indian Rebellion or the Crimean War could reach the public while the events were still unfolding, rather than as historical footnotes.</p><p><strong>D.</strong> Despite its success, the cable was not without its critics. Skeptics initially called it a hoax, while environmentalists of the era worried about the disruption to the ocean floor. Furthermore, the prohibitive cost of sending a telegram—initially $100 for ten words (equivalent to roughly $3,000 today)—meant the technology was the exclusive domain of governments and the ultra-wealthy. It would be decades before the price dropped sufficiently for the average citizen to send a 'cable' to relatives across the pond.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "matching",
+                "instructions": "Decide which paragraph, A to D, has the information given in each statement below. Select E if the information is not given.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The specific reason why the first cable stopped working.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B: 'applied excessive voltage... which fried the insulation'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "Mention of a specific ship used to lay the cable.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B mentions the 'Great Eastern'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "The cable allowed ordinary people to speak to relatives immediately.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D says the cost was 'prohibitive' and it was 'decades before' ordinary people could use it. Therefore, D contains information contradicting the idea of immediate access."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "A comparison of travel time for messages before and after the cable.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A compares 'ten days by steamship' to 'near-instantaneous'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "The effect of the cable on the price of gold.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Paragraph C mentions 'stock prices' and 'global market', but never specifically mentions gold. (Not Given)."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "Details about a celebratory event involving heads of state.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A mentions the message between 'Queen Victoria and President James Buchanan'."
+                    },
+                    {
+                        "id": "q7",
+                        "prompt": "How the cable changed the way news was reported.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C mentions it 'revolutionized journalism'."
+                    },
+                    {
+                        "id": "q8",
+                        "prompt": "The exact length of the cable in miles.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Paragraph B mentions 'thousands of miles', but not the exact number. (Not Given)."
+                    },
+                    {
+                        "id": "q9",
+                        "prompt": "A business strategy that became obsolete due to the cable.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C describes the end of 'arbitrage' for merchants."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p4",
+        "title": "Reading Part 4: Reading for Viewpoints",
+        "timer_seconds": 720,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Locked Out: The Fight for the Right to Repair</h3><p>Modern electronics are marvels of engineering, but they are increasingly becoming black boxes that owners cannot open, let alone fix. This has given rise to the \"Right to Repair\" movement, a coalition of consumers and repair shops demanding access to manuals, parts, and diagnostic tools.</p><p>Kyle Wiens, a prominent advocate, argues that the current model creates a culture of disposability. \"When a $1,000 phone is scrapped because of a $10 battery issue, that is an environmental crime,\" Wiens asserts. He contends that manufacturers deliberately design products with glued-in batteries and proprietary screws to force consumers to buy new devices rather than repair old ones. This \"planned obsolescence,\" he claims, contributes to the 50 million tons of e-waste generated globally each year.</p><p>However, tech industry lobbyist Sarah O’Neil defends the manufacturers' stance. She argues that restricting repairs to authorized centers is a matter of safety and security. \"Modern devices contain high-density lithium batteries that can explode if mishandled by an amateur,\" O’Neil warns. Furthermore, she raises concerns about data privacy, suggesting that unvetted third-party repair shops could steal personal user data or install malicious hardware. O’Neil insists that companies invest millions in R&D and have a right to protect their intellectual property from reverse-engineering.</p><p>The debate has reached legislative halls, with several regions proposing bills that would fine companies for blocking third-party repairs. While Wiens champions this as a win for consumer freedom, O’Neil predicts it will stifle innovation and compromise user safety.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "What is the main accusation Kyle Wiens makes against manufacturers?",
+                        "options": [
+                            "They charge too much for phones",
+                            "They design products to fail or be unfixable",
+                            "They use dangerous batteries",
+                            "They steal user data"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He mentions 'deliberately design products... to force consumers to buy new'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "Sarah O'Neil argues that third-party repairs are...",
+                        "options": [
+                            "too expensive",
+                            "environmentally friendly",
+                            "unsafe and insecure",
+                            "illegal"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "She warns of batteries exploding (unsafe) and data theft (insecure)."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "What environmental impact does Wiens highlight?",
+                        "options": [
+                            "Carbon emissions from factories",
+                            "Excessive e-waste",
+                            "Water pollution",
+                            "Deforestation"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He cites '50 million tons of e-waste generated globally'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "O'Neil believes that 'Right to Repair' laws would...",
+                        "options": [
+                            "lower prices",
+                            "stifle innovation",
+                            "help the poor",
+                            "increase sales"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She predicts it will 'stifle innovation'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "The term 'planned obsolescence' refers to...",
+                        "options": [
+                            "products designed to last forever",
+                            "products designed to become useless quickly",
+                            "safety regulations",
+                            "recycling programs"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Context: 'force consumers to buy new devices rather than repair old ones'."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the comment by choosing the best option.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "I run a small electronics repair shop, so I have a stake in this. I see Sarah O'Neil's point about "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "safety",
+                            "cost",
+                            "marketing",
+                            "speed"
+                        ],
+                        "correct_value": "safety"
+                    },
+                    {
+                        "type": "text",
+                        "value": "; lithium batteries are dangerous if you don't know what you're doing. However, her argument about "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "privacy",
+                            "recycling",
+                            "innovation",
+                            "taxes"
+                        ],
+                        "correct_value": "privacy"
+                    },
+                    {
+                        "type": "text",
+                        "value": " is insulting. Independent shops rely on their reputation; we wouldn't steal data. I agree with Wiens that the real issue is "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "greed",
+                            "safety",
+                            "science",
+                            "politics"
+                        ],
+                        "correct_value": "greed"
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Manufacturers just want to sell more units. Currently, I have to turn away customers because I can't buy the specific "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "store",
+                            "computer",
+                            "screwdriver",
+                            "license"
+                        ],
+                        "correct_value": "screwdriver"
+                    },
+                    {
+                        "type": "text",
+                        "value": " needed to open their phone. That is not about safety; it is about "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "control",
+                            "freedom",
+                            "help",
+                            "hope"
+                        ],
+                        "correct_value": "control"
+                    },
+                    {
+                        "type": "text",
+                        "value": "."
+                    }
+                ]
+            }
+        }
+    }
+]

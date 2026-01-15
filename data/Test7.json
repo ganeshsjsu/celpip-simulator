@@ -1,0 +1,642 @@
+[
+    {
+        "part_id": "p1",
+        "title": "Reading Part 1: Reading Correspondence",
+        "timer_seconds": 660,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Subject: Final Notice - Return of Company Assets</h3><p><strong>To:</strong> Alex Mercer<br/><strong>From:</strong> IT Asset Management (TechFlow Inc.)</p><p>Dear Alex,</p><p>Our records indicate that your employment with TechFlow Inc. terminated on August 31st. As per the Employee Handbook (Section 9.2), all company-issued hardware must be returned within 5 business days of the departure date.</p><p>It is now September 10th, and we have not yet received your MacBook Pro (Asset #TB-4092) or the associated peripherals (monitor and docking station). Consequently, a charge of $2,400 has been flagged against your final paycheck to cover the replacement cost of these items.</p><p>If you have already shipped the items, please reply with the tracking number immediately so we can reverse this charge. If you have not yet shipped them, you must drop them off at our downtown satellite office (Suite 400) by 5:00 PM tomorrow, Friday, September 11th. Please note that courier fees are not reimbursable for late returns.</p><p>Furthermore, upon inspection of your company phone which was returned yesterday, we noted a cracked screen. As this is deemed 'damage' rather than 'wear and tear,' a deductible of $150 will remain deducted from your final settlement.</p><p>Regards,<br/>IT Asset Team</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The main purpose of the email is to...",
+                        "options": [
+                            "fire the employee",
+                            "demand the return of equipment",
+                            "offer a severance package",
+                            "schedule an exit interview"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "The email is a 'Final Notice' demanding the return of the laptop and peripherals."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "Why has a charge of $2,400 been flagged?",
+                        "options": [
+                            "Alex broke the laptop",
+                            "Alex stole the money",
+                            "The equipment was not returned on time",
+                            "The phone screen was cracked"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "The charge is for the replacement cost because items were not returned within 5 days."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "What is the deadline to avoid the laptop charge?",
+                        "options": [
+                            "August 31st",
+                            "September 10th",
+                            "Tomorrow (Friday) at 5:00 PM",
+                            "Next week"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "The email states: 'drop them off... by 5:00 PM tomorrow, Friday'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "The $150 deduction mentioned is for...",
+                        "options": [
+                            "shipping fees",
+                            "the missing monitor",
+                            "a cracked phone screen",
+                            "late fees"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "The email notes a 'deductible of $150' for the 'cracked screen' on the returned phone."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "If Alex ships the items now, who pays for shipping?",
+                        "options": [
+                            "TechFlow Inc.",
+                            "Alex",
+                            "The insurance company",
+                            "It is free"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "The email states: 'courier fees are not reimbursable for late returns'."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "The tone of the email is...",
+                        "options": [
+                            "Friendly and welcoming",
+                            "Strict and warning",
+                            "Confused and hesitant",
+                            "Grateful"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "The email uses phrases like 'Final Notice', 'charge... flagged', and 'must drop them off'."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Here is a response. Complete it by filling in the blanks.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Dear IT Team, <br/><br/> I am writing to clarify the situation. I actually "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "sold",
+                            "shipped",
+                            "lost",
+                            "broke"
+                        ],
+                        "correct_value": "shipped",
+                        "explanation": "The context implies he is providing the tracking info requested to prove he sent the items."
+                    },
+                    {
+                        "type": "text",
+                        "value": " the laptop and monitor three days ago via FedEx. I have attached the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "receipt",
+                            "tracking number",
+                            "laptop",
+                            "check"
+                        ],
+                        "correct_value": "tracking number",
+                        "explanation": "The IT team explicitly asked: 'please reply with the tracking number'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " below. Please verify this and remove the $2,400 hold from my paycheck. <br/><br/> Regarding the phone, I dispute the $150 charge. The screen crack happened two months ago while I was at a "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "party",
+                            "client site",
+                            "vacation",
+                            "gym"
+                        ],
+                        "correct_value": "client site",
+                        "explanation": "To dispute the charge, he must argue it was work-related damage, not negligence."
+                    },
+                    {
+                        "type": "text",
+                        "value": " working. I reported it to my manager at the time, and she said it would be covered by the company "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "insurance",
+                            "bonus",
+                            "charity",
+                            "lunch"
+                        ],
+                        "correct_value": "insurance",
+                        "explanation": "Standard corporate practice is for insurance to cover work-related equipment damage."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> Please check with her before finalizing my "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q11",
+                        "options": [
+                            "hiring",
+                            "settlement",
+                            "vacation",
+                            "promotion"
+                        ],
+                        "correct_value": "settlement",
+                        "explanation": "Refers to the 'final settlement' mentioned in the IT email."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/> Alex"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p2",
+        "title": "Reading Part 2: Reading to Apply a Diagram",
+        "timer_seconds": 480,
+        "layout_type": "split_image_form",
+        "left_panel_data": {
+            "image_src": "/images/test7_p2_paws.png",
+            "image_generation_prompt": "Infographic table titled 'Paws & Claws: Pet Boarding Services'. Three columns: 'Daycare (No Overnight)', 'Standard Kennel', and 'Luxury Suite'.\n\nRow 1: 'Rate'. Daycare: $30/day. Standard: $50/night. Luxury: $85/night.\nRow 2: 'Playtime'. Daycare: Group Play (All Day). Standard: 2 x 30min Group Play. Luxury: Individual Play + Cuddle Time.\nRow 3: 'Meals'. Daycare: Owner provides. Standard: House Kibble Included. Luxury: Gourmet Wet Food or Owner Diet.\nRow 4: 'Webcam Access'. Daycare: Lobby Only. Standard: None. Luxury: 24/7 Private Room Cam.\n\nFine Print Box (Red): '*Vaccination Policy: Proof of Rabies & Bordetella required 48 hours prior to drop-off. *Holiday Surcharge: +20% on all rates during statutory holidays. *Breed Restriction: Bully breeds must undergo a $40 temperament assessment before group play is authorized.'"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "fill_in_the_blank",
+                "instructions": "Read the email regarding the diagram. Complete the email.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "<strong>To:</strong> Paws & Claws <br/> <strong>From:</strong> Dog Owner <br/><br/> Hi, I need to book a stay for my dog, Rex, for the upcoming Thanksgiving long weekend. We will be gone for 3 nights. <br/><br/> Rex gets very anxious around other dogs, so the **Standard Kennel** might not be good because it only offers "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q1",
+                        "options": [
+                            "individual play",
+                            "group play",
+                            "no play",
+                            "cuddle time"
+                        ],
+                        "correct_value": "group play",
+                        "explanation": "Row 2: Standard includes '2 x 30min Group Play', which is bad for anxious dogs."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". I think the **Luxury Suite** is better since it offers "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q2",
+                        "options": [
+                            "group play",
+                            "individual play",
+                            "training",
+                            "grooming"
+                        ],
+                        "correct_value": "individual play",
+                        "explanation": "Row 2: Luxury includes 'Individual Play'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> I also want to be able to check on him while I'm away. The Standard Kennel has "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q3",
+                        "options": [
+                            "full access",
+                            "lobby access",
+                            "no cameras",
+                            "private cams"
+                        ],
+                        "correct_value": "no cameras",
+                        "explanation": "Row 4: Standard says 'None'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ", so that won't work. <br/><br/> Since it is Thanksgiving weekend, I assume I will have to pay the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q4",
+                        "options": [
+                            "regular rate",
+                            "holiday surcharge",
+                            "weekend discount",
+                            "late fee"
+                        ],
+                        "correct_value": "holiday surcharge",
+                        "explanation": "Fine print: '+20% on all rates during statutory holidays'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> Lastly, Rex is a Pitbull mix. Does he need the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q5",
+                        "options": [
+                            "gourmet food",
+                            "temperament assessment",
+                            "extra vaccine",
+                            "muzzle"
+                        ],
+                        "correct_value": "temperament assessment",
+                        "explanation": "Fine print: 'Bully breeds must undergo a $40 temperament assessment'."
+                    },
+                    {
+                        "type": "text",
+                        "value": "?"
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the response.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Hi there, <br/><br/> You made the right choice. The **Luxury Suite** is perfect for anxious dogs because of the individual attention. <br/><br/> Since you are booking for Thanksgiving, yes, the total price will be $85 per night plus the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "10%",
+                            "20%",
+                            "50%",
+                            "5%"
+                        ],
+                        "correct_value": "20%",
+                        "explanation": "Fine print specifies a +20% holiday surcharge."
+                    },
+                    {
+                        "type": "text",
+                        "value": " extra fee. <br/><br/> Regarding the temperament assessment: since you are booking the Luxury Suite with **Individual Play**, the assessment is actually "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "mandatory",
+                            "optional",
+                            "expensive",
+                            "illegal"
+                        ],
+                        "correct_value": "optional",
+                        "explanation": "The fine print says assessment is required 'before group play is authorized'. Since Luxury uses Individual Play, he might skip it (or it's less critical)."
+                    },
+                    {
+                        "type": "text",
+                        "value": " unless you want him to socialize. <br/><br/> Please remember to upload his "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "photos",
+                            "vaccination records",
+                            "food preferences",
+                            "toys"
+                        ],
+                        "correct_value": "vaccination records",
+                        "explanation": "Fine print: 'Proof of Rabies & Bordetella required 48 hours prior'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " by Wednesday, or we cannot accept him."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p3",
+        "title": "Reading Part 3: Reading for Information",
+        "timer_seconds": 540,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<p><strong>A.</strong> The London Underground, familiarly known as the Tube, is the world's oldest underground railway network. Its origins lie in the congestion of mid-19th century London, where horse-drawn traffic paralyzed the city. The visionary solicitor Charles Pearson proposed a radical solution: \"trains in drains.\" Despite skepticism, the Metropolitan Railway opened in 1863, connecting Paddington to Farringdon. It was an immediate success, carrying 38,000 passengers on its opening day, proving that subterranean travel was not only possible but profitable.</p><p><strong>B.</strong> The early lines were built using the \"cut-and-cover\" method. This involved digging a massive trench along an existing road, laying the tracks, building a brick arch roof, and then covering it back up. While effective, this method caused immense disruption to traffic and required the demolition of many properties. Furthermore, the early trains were powered by steam locomotives. Although the tunnels had ventilation shafts, the smoke and steam created a sulfurous, choking atmosphere that passengers famously described as \"mild torture.\"</p><p><strong>C.</strong> A technological leap occurred in 1890 with the opening of the City & South London Railway, the world's first deep-level electric railway. By using electric traction, engineers could bore much deeper underground using a \"tunnelling shield,\" avoiding the need to disrupt the surface. These deeper, circular tunnels gave rise to the nickname \"The Tube.\" The transition to electricity also eliminated the smoke problem, making the underground environment cleaner and allowing for the expansion of the network into the suburbs.</p><p><strong>D.</strong> During World War II, the Underground played a vital, unintended role as an air-raid shelter during the Blitz. Initially, the government discouraged this, fearing a \"troglodyte mentality\" where citizens would refuse to surface. However, the public ignored these warnings, and soon thousands were sleeping on station platforms every night. The authorities eventually adapted, installing bunks, canteens, and even libraries in the stations. This period cemented the Tube's place in the cultural heart of the nation, representing resilience in the face of adversity.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "matching",
+                "instructions": "Decide which paragraph, A to D, has the information given in each statement below. Select E if the information is not given.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The name of the individual who first proposed the underground railway.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A mentions 'visionary solicitor Charles Pearson'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "The specific construction technique that caused surface traffic disruption.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B describes the 'cut-and-cover' method causing 'immense disruption'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "The government's initial reaction to using stations as shelters.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D says the government 'initially discouraged this'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "The date when the first escalator was installed in a station.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Not mentioned in the text. (Not Given)."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "Why the nickname 'The Tube' was adopted.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C links it to the 'circular tunnels' created by deep boring."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "Passenger complaints about the air quality on early trains.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B mentions 'sulfurous, choking atmosphere' described as 'mild torture'."
+                    },
+                    {
+                        "id": "q7",
+                        "prompt": "The number of people who died in the tunnels during the war.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Paragraph D discusses the war but does NOT give casualty statistics. (Not Given)."
+                    },
+                    {
+                        "id": "q8",
+                        "prompt": "The innovation that allowed tunnels to be dug without disturbing houses.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C mentions the 'tunnelling shield' and electric traction allowed deep boring."
+                    },
+                    {
+                        "id": "q9",
+                        "prompt": "The exact cost of a ticket on opening day in 1863.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Paragraph A mentions passenger numbers but NOT ticket prices. (Not Given)."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p4",
+        "title": "Reading Part 4: Reading for Viewpoints",
+        "timer_seconds": 720,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>The Gig Economy: Liberation or Precarity?</h3><p>The rise of the \"gig economy\"—defined by short-term contracts and freelance work via platforms like Uber, DoorDash, and TaskRabbit—has fundamentally reshaped the labor market. Proponents hail it as the democratization of work, offering unparalleled autonomy. However, critics argue it represents a regression to Victorian-era labor conditions, stripped of the safety nets built over the 20th century.</p><p>Tech evangelist Simon Vance argues that the gig model empowers the individual. \"The traditional 9-to-5 is an anachronism,\" Vance asserts. \"Gig platforms allow workers to become micro-entrepreneurs, choosing when, where, and how much they work.\" He cites data showing that 40% of gig workers use these platforms as a supplemental income stream to fund education or creative pursuits. Vance believes that enforcing traditional employment status (and thus rigid shifts) would destroy the very flexibility that attracts workers to these apps.</p><p>Conversely, labor economist Dr. Elena Rossi characterizes the system as \"algorithmic management\" that masks exploitation. She points out that while workers have theoretical flexibility, they are often penalized by opaque algorithms for refusing gigs or taking breaks. \"This is not autonomy; it is precariousness,\" Rossi contends. She highlights that gig workers lack health insurance, paid sick leave, and pension contributions. By misclassifying employees as \"independent contractors,\" corporations offload all risk onto the worker while retaining control over pricing and service standards.</p><p>Policy analyst Marcus Thorne suggests a \"third way.\" He advocates for a portable benefits system, where benefits are tied to the worker rather than the employer. \"If a driver works 10 hours for Uber and 10 for Lyft, both companies should contribute pro-rata to a central benefits fund,\" Thorne proposes. This would preserve flexibility while closing the security gap.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "Simon Vance believes the traditional 9-to-5 job is...",
+                        "options": [
+                            "safe and secure",
+                            "an outdated concept",
+                            "essential for the economy",
+                            "better than gig work"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He calls it an 'anachronism' (something belonging to a period other than that in which it exists)."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "What does Dr. Rossi mean by 'algorithmic management'?",
+                        "options": [
+                            "Computers doing the work",
+                            "Fair distribution of tasks",
+                            "Control via opaque software rules",
+                            "Efficient scheduling"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "She explains workers are 'penalized by opaque algorithms' despite theoretical freedom."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "Dr. Rossi argues that corporations use the 'independent contractor' label to...",
+                        "options": [
+                            "avoid paying taxes",
+                            "give workers freedom",
+                            "offload risk and costs",
+                            "simplify paperwork"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "She states they 'offload all risk onto the worker' (no benefits, etc.)."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "Marcus Thorne's 'third way' involves...",
+                        "options": [
+                            "banning gig apps",
+                            "forcing workers to choose one app",
+                            "portable benefits attached to the worker",
+                            "government-run taxis"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "He advocates for a 'portable benefits system... tied to the worker'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "Proponents of the gig economy value...",
+                        "options": [
+                            "stability",
+                            "autonomy and flexibility",
+                            "unions",
+                            "fixed salaries"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Text says proponents hail it for offering 'unparalleled autonomy'."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the comment by choosing the best option.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "I've driven for a ride-share app for three years. Vance talks about 'micro-entrepreneurs,' but that feels like marketing spin. If I can't set my own "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "music",
+                            "hours",
+                            "prices",
+                            "route"
+                        ],
+                        "correct_value": "prices",
+                        "explanation": "The writer argues that if they can't set their own prices, they aren't truly independent business owners."
+                    },
+                    {
+                        "type": "text",
+                        "value": ", I'm not really a business owner. However, I can't deny the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "flexibility",
+                            "money",
+                            "stress",
+                            "status"
+                        ],
+                        "correct_value": "flexibility",
+                        "explanation": "He admits that being able to stop working when his daughter is sick is valuable 'flexibility'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". When my daughter gets sick, I can just stop working without asking a boss. That is valuable. But Rossi is right about the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "safety net",
+                            "technology",
+                            "traffic",
+                            "passengers"
+                        ],
+                        "correct_value": "safety net",
+                        "explanation": "Refers to the lack of protection (sick pay) when he had the flu."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Last month I had the flu and made zero money. Thorne's idea of "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "banning apps",
+                            "pro-rata contributions",
+                            "higher taxes",
+                            "free cars"
+                        ],
+                        "correct_value": "pro-rata contributions",
+                        "explanation": "Thorne proposed companies contribute proportionally (pro-rata) to a benefits fund."
+                    },
+                    {
+                        "type": "text",
+                        "value": " sounds perfect. It would stop companies from "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "hiring",
+                            "innovating",
+                            "freeloading",
+                            "driving"
+                        ],
+                        "correct_value": "freeloading",
+                        "explanation": "Implies companies are using the social system without paying their fair share (freeloading)."
+                    },
+                    {
+                        "type": "text",
+                        "value": " on the social system while keeping the app model alive."
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,639 @@
+[
+    {
+        "part_id": "p1",
+        "title": "Reading Part 1: Reading Correspondence",
+        "timer_seconds": 660,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Subject: Urgent Repair Request - Unit 304</h3><p><strong>To:</strong> Property Manager<br/><strong>From:</strong> Sarah Miller, Tenant</p><p>Dear Mr. Henderson,</p><p>I am writing to report a significant leak that has developed in my bathroom ceiling as of this morning, October 12th. I noticed a small water stain yesterday, but when I returned from work today, water was actively dripping into a bucket I had placed underneath. The paint is now peeling, and I am concerned about potential mold growth if this is not addressed immediately.</p><p>I suspect the issue is coming from Unit 404 above me. I tried knocking on their door, but no one answered. Since this is an active leak affecting the structure, I believe this classifies as an 'Emergency Repair' under Clause 8 of my lease agreement.</p><p>I will be home all day tomorrow (Friday) to allow maintenance access. Please let me know if you need me to secure my dog in the bedroom. If I do not hear back by 5:00 PM today, I will have to call the emergency plumber listed in the building handbook and bill the cost to the management company, as permitted by the Tenancy Act.</p><p>Regards,<br/>Sarah Miller</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "Sarah is writing to...",
+                        "options": [
+                            "pay her rent",
+                            "report a noise complaint",
+                            "request an emergency repair",
+                            "move out of her unit"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "She explicitly states: 'I believe this classifies as an Emergency Repair'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "When did Sarah first notice the problem?",
+                        "options": [
+                            "This morning",
+                            "Yesterday",
+                            "Last week",
+                            "On Friday"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She says: 'I noticed a small water stain yesterday'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "What does Sarah suspect is the cause?",
+                        "options": [
+                            "A broken pipe in her wall",
+                            "The unit above her",
+                            "The roof leaking",
+                            "Her washing machine"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She suspects 'the issue is coming from Unit 404 above me'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "What action will Sarah take if she gets no reply?",
+                        "options": [
+                            "Call the police",
+                            "Fix it herself",
+                            "Call an emergency plumber",
+                            "Stop paying rent"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "She will 'call the emergency plumber... and bill the cost'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "Sarah mentions she has...",
+                        "options": [
+                            "a cat",
+                            "a dog",
+                            "a child",
+                            "a roommate"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She asks if she needs to 'secure my dog'."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "Sarah considers this urgent because...",
+                        "options": [
+                            "she has guests coming",
+                            "it is interfering with her sleep",
+                            "water is actively dripping",
+                            "the smell is bad"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "She states 'water was actively dripping'."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Here is a response. Complete it by filling in the blanks.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Dear Sarah, <br/><br/> Thank you for reporting this. I have contacted the tenant in Unit 404, and it turns out their "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "toilet",
+                            "dishwasher",
+                            "shower",
+                            "roof"
+                        ],
+                        "correct_value": "dishwasher",
+                        "explanation": "A 'loose hose' described in the response is a common issue with dishwashers causing leaks."
+                    },
+                    {
+                        "type": "text",
+                        "value": " had a loose hose, which caused the leak. They have turned off the water valve, so the dripping should stop immediately. <br/><br/> Because the water has stopped, we do not need to send an emergency plumber tonight. However, we will send our maintenance team tomorrow morning to repair your "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "floor",
+                            "ceiling",
+                            "window",
+                            "sink"
+                        ],
+                        "correct_value": "ceiling",
+                        "explanation": "Sarah reported a 'significant leak that has developed in my bathroom ceiling'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> Since you mentioned you have a dog, please ensure he is "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "fed",
+                            "walked",
+                            "secured",
+                            "quiet"
+                        ],
+                        "correct_value": "secured",
+                        "explanation": "Sarah explicitly asked: 'Please let me know if you need me to secure my dog'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " in a separate room for the safety of our staff. <br/><br/> Regarding the mold concern, we will apply an anti-fungal spray before repainting. Please keeps the windows open to help the area "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "dry",
+                            "cool",
+                            "clean",
+                            "freeze"
+                        ],
+                        "correct_value": "dry",
+                        "explanation": "Opening windows promotes airflow, which helps the damp area 'dry' out before painting."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> See you "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q11",
+                        "options": [
+                            "tonight",
+                            "tomorrow",
+                            "next week",
+                            "Monday"
+                        ],
+                        "correct_value": "tomorrow",
+                        "explanation": "The manager states the team is coming 'tomorrow morning', so they will see her then."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/> Property Management"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p2",
+        "title": "Reading Part 2: Reading to Apply a Diagram",
+        "timer_seconds": 480,
+        "layout_type": "split_image_form",
+        "left_panel_data": {
+            "image_src": "/images/test5_p2_coworking.png",
+            "image_generation_prompt": "Infographic table titled 'The Hive: Coworking Space Membership Tiers'. Three columns: 'Hot Desk', 'Dedicated Desk', and 'Private Office'.\n\nRow 1: 'Price'. Hot Desk: $200/mo. Dedicated: $450/mo. Private: $900/mo.\nRow 2: 'Access Hours'. Hot Desk: Mon-Fri (9am-5pm). Dedicated: 24/7 Access. Private: 24/7 Access.\nRow 3: 'Meeting Room Credits'. Hot Desk: 2 hrs/mo. Dedicated: 10 hrs/mo. Private: Unlimited.\nRow 4: 'Guest Policy'. Hot Desk: No Guests. Dedicated: 2 Guests/visit. Private: Unlimited Guests.\n\nFine Print Box (Red): '*Keycard Deposit: $50 required for 24/7 access plans. *Extra Meeting Credits: $25 per hour. *Printing: 500 pages B&W included for all plans; color printing is $0.10/page.'"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "fill_in_the_blank",
+                "instructions": "Read the email regarding the diagram. Complete the email.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "<strong>To:</strong> The Hive Management <br/> <strong>From:</strong> Freelancer <br/><br/> Hi, I'm interested in joining. I work as a graphic designer, so I often work late nights and weekends. Because of my schedule, I definitely cannot take the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q1",
+                        "options": [
+                            "Hot Desk",
+                            "Dedicated Desk",
+                            "Private Office"
+                        ],
+                        "correct_value": "Hot Desk",
+                        "explanation": "Hot Desk access is limited to 'Mon-Fri (9am-5pm)'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " plan, as I need after-hours access. <br/><br/> I don't need a whole office, so the middle option looks best. However, I have clients come in for meetings about once a week. According to the chart, the Dedicated Desk allows me to bring "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q2",
+                        "options": [
+                            "no guests",
+                            "1 guest",
+                            "2 guests",
+                            "unlimited guests"
+                        ],
+                        "correct_value": "2 guests",
+                        "explanation": "Row 4: Dedicated Desk allows '2 Guests/visit'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " per visit, which is perfect. <br/><br/> I need about 8 hours of meeting room time per month. The plan includes "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q3",
+                        "options": [
+                            "2 hours",
+                            "5 hours",
+                            "10 hours",
+                            "unlimited"
+                        ],
+                        "correct_value": "10 hours",
+                        "explanation": "Row 3: Dedicated Desk includes '10 hrs/mo' of meeting credits."
+                    },
+                    {
+                        "type": "text",
+                        "value": ", so that should cover me. <br/><br/> Also, since I print a lot of proofs for my design work, I wanted to check: if I print 100 pages in **color**, do I have to pay "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q4",
+                        "options": [
+                            "nothing",
+                            "$10",
+                            "$25",
+                            "$50"
+                        ],
+                        "correct_value": "$10",
+                        "explanation": "Color printing is $0.10/page. 100 pages * $0.10 = $10. (Only B&W is included)."
+                    },
+                    {
+                        "type": "text",
+                        "value": "? <br/><br/> Finally, I assume I'll need to pay the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q5",
+                        "options": [
+                            "signup fee",
+                            "keycard deposit",
+                            "cleaning fee",
+                            "guest fee"
+                        ],
+                        "correct_value": "keycard deposit",
+                        "explanation": "Fine print: '$50 required for 24/7 access plans'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " upfront?"
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the response.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Hi Freelancer, <br/><br/> You are spot on. The **Hot Desk** wouldn't work for you since the doors lock at "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "5:00 PM",
+                            "9:00 PM",
+                            "midnight",
+                            "never"
+                        ],
+                        "correct_value": "5:00 PM"
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> For the Dedicated Desk, yes, your 10 hours of credit will cover your client meetings perfectly. If you ever go over, you can just buy more credits for "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "$10/hr",
+                            "$25/hr",
+                            "$50/hr",
+                            "free"
+                        ],
+                        "correct_value": "$25/hr",
+                        "explanation": "Fine print: '*Extra Meeting Credits: $25 per hour'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> Regarding printing: correct, the free allowance is for "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "color only",
+                            "black & white",
+                            "glossy",
+                            "posters"
+                        ],
+                        "correct_value": "black & white"
+                    },
+                    {
+                        "type": "text",
+                        "value": " only. Color prints will be added to your monthly invoice. <br/><br/> We can get your keycard ready for you on Monday; just remember to bring the $50 deposit."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p3",
+        "title": "Reading Part 3: Reading for Information",
+        "timer_seconds": 540,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<p><strong>A.</strong> The Rosetta Stone, discovered in 1799, is perhaps the most famous archaeological artifact in the world. Found by French soldiers rebuilding a fort in the Egyptian town of Rashid (Rosetta), the stele contains a decree issued at Memphis in 196 BC on behalf of King Ptolemy V. Its significance lies not in the content of the decree, which details mundane tax repeals and temple construction, but in the fact that it is inscribed in three distinct scripts: Ancient Greek, Egyptian Demotic, and Ancient Egyptian Hieroglyphs.</p><p><strong>B.</strong> For centuries, the ability to read hieroglyphs had been lost. Scholars assumed they were purely symbolic or magical illustrations rather than a phonetic language. The Rosetta Stone provided the critical key to decipherment because the Greek text—which scholars could already read—acted as a translation guide for the other two unknown scripts. This allowed linguists to cross-reference the proper names, such as \"Ptolemy,\" to understand the phonetic sounds of the hieroglyphic characters.</p><p><strong>C.</strong> The race to crack the code was a fierce intellectual rivalry between the British polymath Thomas Young and the French scholar Jean-François Champollion. Young made the initial breakthrough in 1814 by identifying that the cartouches (ovals containing hieroglyphs) contained royal names. However, it was Champollion who, in 1822, fully realized that hieroglyphs were a complex combination of phonetic and ideographic signs. He famously burst into his brother's office shouting, \"Je tiens l'affaire!\" (I've got it!) before fainting from exhaustion.</p><p><strong>D.</strong> Following the defeat of Napoleon in Egypt, the stone was surrendered to the British under the Treaty of Alexandria in 1801. It has been housed in the British Museum in London since 1802 and remains its most-visited object. Egypt has repeatedly requested the return of the stone, citing it as a stolen piece of cultural heritage. The museum maintains that its acquisition was legal under the international laws of the time and argues that it serves as a universal symbol of human understanding best displayed in a global context.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "matching",
+                "instructions": "Decide which paragraph, A to D, has the information given in each statement below. Select E if the information is not given.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The specific year the stone was moved to its current location in London.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D states it has been housed in the British Museum 'since 1802'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "The name of the king mentioned in the text on the stone.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A mentions 'King Ptolemy V'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "Details about the physical weight and dimensions of the stone.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Not mentioned in the text. (E)."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "A specific phrase shouted by a scholar upon solving the puzzle.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C mentions Champollion shouting 'Je tiens l'affaire!'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "The reason why the stone was originally created.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A says it contains a decree about 'tax repeals and temple construction'."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "A description of the stone's three different scripts.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A lists: 'Ancient Greek, Egyptian Demotic, and Ancient Egyptian Hieroglyphs'."
+                    },
+                    {
+                        "id": "q7",
+                        "prompt": "Arguments regarding the repatriation of the artifact.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D discusses Egypt's request for return and the museum's refusal."
+                    },
+                    {
+                        "id": "q8",
+                        "prompt": "The stone was found inside a pyramid.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Paragraph A says it was found by soldiers 'rebuilding a fort', not in a pyramid. (E)."
+                    },
+                    {
+                        "id": "q9",
+                        "prompt": "Explanation of how the Greek text helped solve the other languages.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B explains it acted as a 'translation guide'."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p4",
+        "title": "Reading Part 4: Reading for Viewpoints",
+        "timer_seconds": 720,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>The Paradox of Green Gentrification</h3><p>Urban revitalization projects involving the creation of parks, greenways, and community gardens are universally lauded for their ecological and psychological benefits. However, sociologists are increasingly drawing attention to a phenomenon known as \"green gentrification.\" This paradox occurs when environmental improvements intended to ameliorate the lives of local residents inadvertently trigger a cycle of displacement.</p><p>Professor Elias Thorne argues that green spaces act as a beacon for high-income investors. \"When a neglected neighborhood gets a 'High Line' style park, it signals to developers that the area is 'safe' for capital,\" Thorne explains. This leads to a rapid escalation in property values and rents. Consequently, the working-class communities who endured the pollution and neglect are priced out just as the neighborhood becomes livable. \"It is a cruel irony,\" Thorne notes. \"They get the park, but they lose their homes.\"</p><p>Conversely, urban planner Sarah Jenkins contends that the fear of gentrification should not halt ecological progress. She advocates for a \"Just Green Enough\" strategy—cleaning up environmental hazards without adding the luxury amenities (like artisanal cafes and high-end retail) that attract speculation. Jenkins argues that stopping green projects hurts the poor the most, condemning them to live in concrete heat islands. \"We cannot weaponize environmental justice against environmental health,\" she asserts.</p><p>Community activist Marcus Lee adds a third dimension: policy intervention. He believes green projects must be coupled with rigorous rent controls and social housing guarantees *before* a single tree is planted. \"The market is faster than the bureaucracy,\" Lee warns. \"If you don't lock in affordability first, the greenway becomes a red carpet for the wealthy.\"</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The 'paradox' mentioned in the text refers to...",
+                        "options": [
+                            "parks causing pollution",
+                            "improvements leading to displacement",
+                            "rich people avoiding parks",
+                            "trees dying in cities"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Improvements intended to help residents 'inadvertently trigger a cycle of displacement'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "Professor Thorne believes green spaces act as...",
+                        "options": [
+                            "a filter for pollution",
+                            "a signal to investors",
+                            "a community hub",
+                            "a waste of money"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He says they act as 'a beacon for high-income investors' signaling safety for capital."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "What is the 'Just Green Enough' strategy?",
+                        "options": [
+                            "Planting only grass",
+                            "Cleaning up without adding luxury amenities",
+                            "Banning parks entirely",
+                            "Only building parks in rich areas"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Jenkins defines it as 'cleaning up... without adding the luxury amenities'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "Marcus Lee argues that protections must be put in place...",
+                        "options": [
+                            "after the park is built",
+                            "during construction",
+                            "before the project starts",
+                            "when rents rise"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "He says: 'before a single tree is planted'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "The term 'concrete heat islands' refers to...",
+                        "options": [
+                            "tropical resorts",
+                            "urban areas lacking nature",
+                            "new luxury apartments",
+                            "construction sites"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Context: Jenkins argues stopping green projects condemns poor to live in these (areas without green cooling)."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the comment by choosing the best option.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "I've lived in this neighborhood for 40 years, and I see exactly what Thorne is talking about. They built a beautiful riverwalk last year, and suddenly my landlord raised the rent by 30%. It feels like the park wasn't built for us, but for the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "wildlife",
+                            "future residents",
+                            "tourists",
+                            "children"
+                        ],
+                        "correct_value": "future residents",
+                        "explanation": "The writer implies the improvements are intended to attract new, wealthier people ('future residents') rather than benefiting locals."
+                    },
+                    {
+                        "type": "text",
+                        "value": " who will replace us. However, I also agree with Jenkins that we shouldn't have to live in "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "luxury",
+                            "fear",
+                            "squalor",
+                            "debt"
+                        ],
+                        "correct_value": "squalor",
+                        "explanation": "Jenkins argues we shouldn't have to live in bad conditions ('squalor') just to prevent gentrification."
+                    },
+                    {
+                        "type": "text",
+                        "value": " just to keep rents low. That is a false choice. The solution is what Marcus Lee suggested: legal "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "action",
+                            "protections",
+                            "fees",
+                            "parks"
+                        ],
+                        "correct_value": "protections",
+                        "explanation": "Refers to Marcus Lee's argument for 'rent controls and social housing guarantees' (legal protections)."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". The city should have frozen property taxes for long-term residents. Instead, they let the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "market",
+                            "weather",
+                            "community",
+                            "trees"
+                        ],
+                        "correct_value": "market",
+                        "explanation": "Lee warned that 'The market is faster than the bureaucracy', implying the market was left unchecked."
+                    },
+                    {
+                        "type": "text",
+                        "value": " run wild. Now, the only people enjoying the new greenway are the ones who "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "built it",
+                            "can afford it",
+                            "hate it",
+                            "clean it"
+                        ],
+                        "correct_value": "can afford it",
+                        "explanation": "This concludes the argument that high costs drive out original residents, leaving only those who 'can afford it'."
+                    },
+                    {
+                        "type": "text",
+                        "value": "."
+                    }
+                ]
+            }
+        }
+    }
+]

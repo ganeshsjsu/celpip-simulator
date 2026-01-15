@@ -6,6 +6,9 @@ import test1Data from '../data/Test1.json';
 import test2Data from '../data/Test2.json';
 import test3Data from '../data/Test3.json';
 import test4Data from '../data/Test4.json';
+import test5Data from '../data/Test5.json';
+import test6Data from '../data/Test6.json';
+import test7Data from '../data/Test7.json';
 
 // Define available tests metadata
 const TESTS = [
@@ -32,6 +35,24 @@ const TESTS = [
     title: 'Practice Test 4',
     description: 'Topics: Gazebo Dispute, Hall Booking, Silk Road, Humanities Debate.',
     data: test4Data
+  },
+  {
+    id: 'test5',
+    title: 'Practice Test 5',
+    description: 'Topics: Tenant Repair, Coworking Membership, Rosetta Stone, Green Gentrification.',
+    data: test5Data
+  },
+  {
+    id: 'test6',
+    title: 'Practice Test 6',
+    description: 'Topics: Ergonomic Assessment, Solaris Music Festival, Panama Canal, AI in Hiring.',
+    data: test6Data
+  },
+  {
+    id: 'test7',
+    title: 'Practice Test 7',
+    description: 'Topics: IT Asset Return, Pet Boarding, London Underground, Gig Economy.',
+    data: test7Data
   }
 ];
 

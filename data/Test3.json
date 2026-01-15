@@ -1,0 +1,630 @@
+[
+    {
+        "part_id": "p1",
+        "title": "Reading Part 1: Reading Correspondence",
+        "timer_seconds": 660,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Subject: Formal Notice Regarding Invoice #4092</h3><p><strong>To:</strong> Prestige Venues Management<br/><strong>From:</strong> Julian Varga, Varga Tech Solutions</p><p>Dear Management Team,</p><p>I am writing to formally contest the 'Cancellation Fee' of $2,500 applied to our account regarding the upcoming corporate retreat scheduled for September 15th. As per our phone conversation on Tuesday, we are <strong>not</strong> cancelling the event; we are merely requesting a postponement due to unforeseen travel restrictions affecting our keynote speakers.</p><p>I refer you to Clause 4.2 of our signed agreement, which explicitly states: <em>\"In the event of a postponement requested more than 30 days prior to the event date, the deposit shall be held as a credit for future booking, provided the new date falls within the same fiscal year.\"</em> Since we are notifying you 45 days in advance and proposing a new date of November 10th (which is in Q4 of this year), the 'Cancellation Fee' outlined in Clause 5.1 is inapplicable.</p><p>Furthermore, your invoice includes a charge for 'Custom Menu Tasting,' which we never attended. I expect a revised invoice reflecting only the retainer transfer by close of business Friday. Failure to rectify this error may compel us to reconsider Prestige Venues for our annual Winter Gala, a contract valued at significantly more than this dispute.</p><p>I await your prompt confirmation.</p><p>Regards,<br/>Julian Varga</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The primary purpose of Julian's email is to...",
+                        "options": [
+                            "cancel the event",
+                            "dispute financial charges",
+                            "book a new venue",
+                            "complain about the food"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He is contesting the 'Cancellation Fee' and the 'Menu Tasting' charge."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "Julian claims the 'Cancellation Fee' is incorrect because...",
+                        "options": [
+                            "the event was cancelled 30 days ago",
+                            "he is postponing, not cancelling",
+                            "the contract was never signed",
+                            "the fee is too high"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He emphasizes: 'we are not cancelling... we are merely requesting a postponement'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "According to the contract, what condition must be met to avoid a penalty?",
+                        "options": [
+                            "The new date must be in the same fiscal year",
+                            "The deposit must be paid in cash",
+                            "The request must be 60 days in advance",
+                            "The menu must be selected"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Clause 4.2: 'provided the new date falls within the same fiscal year'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "What implied threat does Julian make?",
+                        "options": [
+                            "He will sue them",
+                            "He will leave a bad review",
+                            "He will move a larger future contract elsewhere",
+                            "He will not pay the deposit"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "He mentions reconsidering them for the 'Winter Gala... a contract valued at significantly more'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "Why does Julian dispute the 'Menu Tasting' charge?",
+                        "options": [
+                            "The food was bad",
+                            "It was too expensive",
+                            "The service didn't happen",
+                            "He wasn't invited"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "He states: 'which we never attended'."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "Julian's tone can best be described as...",
+                        "options": [
+                            "friendly and casual",
+                            "confused and asking for help",
+                            "stern and transactional",
+                            "apologetic and regretful"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "He uses words like 'formally contest', 'compel us', and 'explicitly states'."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Here is a response. Complete it by filling in the blanks.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Dear Mr. Varga, <br/><br/> Thank you for your email. We have reviewed your file and Clause 4.2. You are correct that postponements are allowed; however, the date you requested (November 10th) is already "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "available",
+                            "fully booked",
+                            "a holiday",
+                            "too early"
+                        ],
+                        "correct_value": "fully booked"
+                    },
+                    {
+                        "type": "text",
+                        "value": " for another event. Therefore, we cannot move your deposit to that specific day. <br/><br/> Regarding the 'Cancellation Fee', our system automatically generated it because the original date was wiped from the calendar. We will "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "enforce",
+                            "waive",
+                            "increase",
+                            "double"
+                        ],
+                        "correct_value": "waive"
+                    },
+                    {
+                        "type": "text",
+                        "value": " this fee immediately, provided you select a new available date within 48 hours. <br/><br/> As for the tasting charge, our records show your "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "assistant",
+                            "wife",
+                            "partner",
+                            "driver"
+                        ],
+                        "correct_value": "assistant"
+                    },
+                    {
+                        "type": "text",
+                        "value": " confirmed the appointment but did not show up. Our policy charges for 'no-shows' to cover food costs. However, as a gesture of goodwill to preserve our relationship for the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "Summer Picnic",
+                            "Winter Gala",
+                            "Spring Fling",
+                            "Fall Retreat"
+                        ],
+                        "correct_value": "Winter Gala"
+                    },
+                    {
+                        "type": "text",
+                        "value": ", we will remove this charge as well. Please let us know if you prefer to "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q11",
+                        "options": [
+                            "cancel entirely",
+                            "pay the fee",
+                            "select a new date",
+                            "sue us"
+                        ],
+                        "correct_value": "select a new date"
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> Prestige Management"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p2",
+        "title": "Reading Part 2: Reading to Apply a Diagram",
+        "timer_seconds": 480,
+        "layout_type": "split_image_form",
+        "left_panel_data": {
+            "image_src": "/images/test3_p2_healthbenefits.png",
+            "image_generation_prompt": "Infographic table titled '2024 Employee Health Benefits Guide'. The table compares three columns: 'Bronze Saver', 'Silver Standard', and 'Gold Premium'.\n\nRow 1: 'Monthly Premium'. Bronze: $0. Silver: $150. Gold: $400.\nRow 2: 'Annual Deductible' (Amount you pay before insurance kicks in). Bronze: $5,000. Silver: $1,500. Gold: $500.\nRow 3: 'Co-Pay (Dr. Visit)'. Bronze: $50/visit. Silver: $25/visit. Gold: $0.\nRow 4: 'Coverage Area'. Bronze: 'In-State Only'. Silver: 'Nationwide (In-Network)'. Gold: 'Nationwide (Any Provider)'.\n\nFine Print Box at the bottom (Red Border): '*Family Plan Surcharge: Adding a spouse adds $200/month to Silver and Gold plans only. *Prescription Drug Coverage is NOT included in the Bronze Saver plan. *Deductible is waived for preventative care (checkups) on all plans.'"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "fill_in_the_blank",
+                "instructions": "Read the email regarding the diagram. Complete the email.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "<strong>To:</strong> HR Department <br/> <strong>From:</strong> Sarah (Regional Sales Manager) <br/><br/> Hi Team, I'm trying to pick my plan for next year. I travel to different states for sales meetings about 10 days a month, so I absolutely cannot choose the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q1",
+                        "options": [
+                            "Bronze Saver",
+                            "Silver Standard",
+                            "Gold Premium"
+                        ],
+                        "correct_value": "Bronze Saver",
+                        "explanation": "Bronze coverage is 'In-State Only', which doesn't work for someone traveling to different states."
+                    },
+                    {
+                        "type": "text",
+                        "value": " plan, even though I love that the premium is free. <br/><br/> I currently take daily medication for my blood pressure. If I stick with that cheap plan, I would have to pay "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q2",
+                        "options": [
+                            "$0",
+                            "full price",
+                            "$25",
+                            "$50"
+                        ],
+                        "correct_value": "full price",
+                        "explanation": "Fine print: 'Prescription Drug Coverage is NOT included in the Bronze Saver plan'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " for my prescriptions, which isn't an option. <br/><br/> I was looking at the **Silver Standard**. I want to add my husband to the plan. With the spouse surcharge, my total monthly cost would be "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q3",
+                        "options": [
+                            "$150",
+                            "$200",
+                            "$350",
+                            "$400"
+                        ],
+                        "correct_value": "$350",
+                        "explanation": "Silver Premium ($150) + Spouse Surcharge ($200) = $350."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> However, my husband has a specific heart specialist he likes who is **out-of-network**. If we want to keep seeing him without paying full price, I think we are forced to upgrade to the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q4",
+                        "options": [
+                            "Bronze Saver",
+                            "Silver Standard",
+                            "Gold Premium"
+                        ],
+                        "correct_value": "Gold Premium",
+                        "explanation": "Gold is the only plan that covers 'Nationwide (Any Provider)'. Silver is 'In-Network' only."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Is that correct? Also, does the Gold plan require a "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q5",
+                        "options": [
+                            "co-pay",
+                            "referral",
+                            "deductible",
+                            "deposit"
+                        ],
+                        "correct_value": "co-pay",
+                        "explanation": "Gold Plan Co-Pay is listed as '$0'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " for doctor visits?"
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the response.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Hi Sarah, <br/><br/> You are interpreting the chart correctly. For out-of-network flexibility, the **Gold Premium** is your only choice. However, be aware of the cost! <br/><br/> For you and your husband, the Gold plan will cost "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "$400",
+                            "$600",
+                            "$800",
+                            "$1000"
+                        ],
+                        "correct_value": "$600",
+                        "explanation": "Gold Premium ($400) + Spouse Surcharge ($200) = $600."
+                    },
+                    {
+                        "type": "text",
+                        "value": " per month. That is quite a jump from the Silver plan. <br/><br/> Also, one small correction: even if you chose the Bronze plan, your annual checkup with your home doctor would cost "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "$50",
+                            "$25",
+                            "$0",
+                            "$5000"
+                        ],
+                        "correct_value": "$0",
+                        "explanation": "Fine print: 'Deductible is waived for preventative care (checkups) on all plans'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " because preventative care is free on all tiers. But yes, for the travel and prescriptions, Bronze is not for you. <br/><br/> If you rarely see the doctor aside from checkups, maybe the Silver plan is better, and you can pay "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "cash",
+                            "insurance",
+                            "deductible",
+                            "premium"
+                        ],
+                        "correct_value": "cash",
+                        "explanation": "Implies paying out-of-pocket (cash) for the one out-of-network doctor visit might be cheaper than the monthly hike to Gold."
+                    },
+                    {
+                        "type": "text",
+                        "value": " for your husband's specialist visits?"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p3",
+        "title": "Reading Part 3: Reading for Information",
+        "timer_seconds": 540,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<p><strong>A.</strong> The Hudson's Bay Company (HBC), chartered in 1670, is the oldest incorporated joint-stock merchandising company in the English-speaking world. King Charles II granted a royal charter to his cousin, Prince Rupert, giving the company exclusive trading rights over the watershed of Hudson Bay—a massive territory covering 1.5 million square miles, which was named Rupert's Land. This area comprised nearly 40% of modern-day Canada. While the primary goal was the lucrative fur trade, specifically beaver pelts for European hat-making, the charter effectively made the HBC the de facto government of this vast wilderness for two centuries.</p><p><strong>B.</strong> The company established a standardized currency known as the \"Made Beaver\" to facilitate trade with Indigenous peoples, who were essential partners in the supply chain. This currency system allowed for the exchange of pelts for European goods like blankets, rifles, and kettles without the use of coinage. However, the company's monopoly was not unchallenged. In the late 18th century, the Montreal-based North West Company (NWC) emerged as a fierce rival, leading to violent skirmishes. The conflict ended in 1821 when the British government forced a merger, retaining the HBC name but expanding its reach to the Pacific and the Arctic.</p><p><strong>C.</strong> By the mid-19th century, the fur trade was declining, and pressure mounted for Britain to transfer control of the land to the newly formed Dominion of Canada. In 1869, under the Deed of Surrender, the HBC sold Rupert's Land to Canada for £300,000. This transfer was contentious; it was negotiated without consulting the Indigenous and Métis inhabitants, sparking the Red River Resistance led by Louis Riel. The sale marked the end of the HBC's role as a colonial administrator and its transition into a private commercial entity.</p><p><strong>D.</strong> Today, the HBC is primarily known as a retail giant, owning department store chains like Saks Fifth Avenue. However, its archives remain a critical resource for historians and climatologists. Because the company kept meticulous daily records of weather, crop yields, and river levels at its trading posts dating back to the 1700s, these journals provide one of the most comprehensive datasets for reconstructing historical climate patterns in North America, long before modern meteorological equipment existed.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "matching",
+                "instructions": "Decide which paragraph, A to D, has the information given in each statement below. Select E if the information is not given.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The specific amount of money paid to transfer land ownership to Canada.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C states it was sold for '£300,000'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "Details about a violent rebellion triggered by a lack of consultation.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C mentions the 'Red River Resistance led by Louis Riel'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "The company’s records are currently used to study global warming trends.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D mentions using journals to 'reconstruct historical climate patterns'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "Prince Rupert personally visited the territory named after him.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Paragraph A mentions the land was named 'Rupert's Land' and given to him, but does NOT state he visited. (Not Given)."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "A description of the currency system used to trade with Indigenous groups.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B describes the 'Made Beaver' currency."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "The merger with a rival company increased the HBC's territory to the Pacific.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B states the 1821 merger expanded its reach 'to the Pacific'."
+                    },
+                    {
+                        "id": "q7",
+                        "prompt": "The HBC is currently the largest retailer in North America.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Paragraph D says it is a 'retail giant', but does NOT claim it is the largest. (Not Given)."
+                    },
+                    {
+                        "id": "q8",
+                        "prompt": "The specific type of animal pelt most valued by the company.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A mentions 'specifically beaver pelts'."
+                    },
+                    {
+                        "id": "q9",
+                        "prompt": "The exact date when the North West Company was founded.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Paragraph B mentions it emerged in the 'late 18th century', but gives no exact date. (Not Given)."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p4",
+        "title": "Reading Part 4: Reading for Viewpoints",
+        "timer_seconds": 720,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Playing God? The Ethics of Solar Geoengineering</h3><p>As global temperatures breach critical thresholds, the scientific community is reluctantly considering measures once confined to science fiction: Solar Radiation Management (SRM). This form of geoengineering involves injecting sulfate aerosols into the stratosphere to reflect a small percentage of sunlight back into space, artificially cooling the planet. <br/><br/> Climatologist Dr. Aris Thorne argues that mitigation strategies—cutting emissions—are no longer sufficient to avert catastrophe. \"We have missed the exit ramp for 1.5 degrees,\" Thorne contends. \"SRM is not a cure, but a tourniquet. It buys us time to decarbonize without societal collapse.\" He likens the approach to a patient in critical condition; you treat the fever before you treat the infection.</p><p>However, ethicist Dr. Elena Rossi warns of the \"moral hazard.\" She posits that if a technological quick-fix is available, political will to cut fossil fuel consumption will evaporate. \"If politicians believe they can dim the sun, they will not do the hard work of restructuring the economy,\" Rossi argues. Furthermore, she highlights the risk of \"termination shock\": if the aerosol injections are suddenly stopped due to war or terrorism, the masked warming would rebound violently within months, destroying ecosystems that cannot adapt quickly enough.</p><p>Geopolitical analyst Simon Vance raises a darker concern: the weaponization of weather. \"The atmosphere has no borders,\" Vance notes. \"If India initiates SRM to cool a heatwave in Delhi, it could disrupt the monsoon cycles in Pakistan or China, causing famine.\" Vance predicts that without a binding global treaty—which currently seems impossible—unilateral geoengineering could trigger conflict. \"Who decides the global thermostat?\" he asks. \"A temperature that suits Russia might drown Bangladesh.\"</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "Dr. Aris Thorne compares Solar Radiation Management (SRM) to...",
+                        "options": [
+                            "a permanent cure",
+                            "a dangerous weapon",
+                            "emergency medical aid",
+                            "science fiction"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "He calls it a 'tourniquet' (emergency bleeding control) and compares the planet to a 'patient in critical condition'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "What is Dr. Rossi's primary fear regarding 'moral hazard'?",
+                        "options": [
+                            "The aerosols are toxic",
+                            "Governments will stop cutting emissions",
+                            "It will cost too much",
+                            "Scientists will play God"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She argues political will to cut fossil fuels 'will evaporate' if a quick fix exists."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "Simon Vance suggests that unilateral geoengineering could lead to...",
+                        "options": [
+                            "global cooling",
+                            "international conflict",
+                            "economic growth",
+                            "better monsoons"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He mentions it could 'trigger conflict' if one country affects another's weather."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "The term 'termination shock' refers to...",
+                        "options": [
+                            "the sudden end of funding",
+                            "rapid warming if spraying stops",
+                            "a political revolution",
+                            "an asteroid impact"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Rossi defines it: 'masked warming would rebound violently within months' if injections stop."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "What is the main disagreement between Thorne and Rossi?",
+                        "options": [
+                            "Whether the planet is warming",
+                            "Whether SRM is scientifically possible",
+                            "Whether SRM should be used as a bridge solution",
+                            "Whether aerosols reflect sunlight"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Thorne sees it as a necessary 'tourniquet' (bridge); Rossi sees it as a dangerous distraction (moral hazard)."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the comment by choosing the best option.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "I manage a large agricultural cooperative in the Midwest, so I read this with dread. While Dr. Thorne's desperation is understandable, he treats the atmosphere like a simple machine. He ignores Vance's point about "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "funding",
+                            "sovereignty",
+                            "technology",
+                            "pollution"
+                        ],
+                        "correct_value": "sovereignty"
+                    },
+                    {
+                        "type": "text",
+                        "value": ". If a rogue nation decides to cool themselves and causes a drought in my state, I have no recourse. That is not just a weather issue; it is an act of "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "kindness",
+                            "aggression",
+                            "science",
+                            "nature"
+                        ],
+                        "correct_value": "aggression"
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Furthermore, Rossi's concept of 'termination shock' is terrifying for a farmer. We plan cycles years in advance. A sudden, violent temperature rebound would result in total crop "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "growth",
+                            "failure",
+                            "export",
+                            "rotation"
+                        ],
+                        "correct_value": "failure"
+                    },
+                    {
+                        "type": "text",
+                        "value": ". We cannot bet the global food supply on a system that requires perfect, uninterrupted "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "stability",
+                            "sunlight",
+                            "rain",
+                            "soil"
+                        ],
+                        "correct_value": "stability"
+                    },
+                    {
+                        "type": "text",
+                        "value": " for centuries. It feels like the ultimate act of "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "humility",
+                            "hubris",
+                            "charity",
+                            "logic"
+                        ],
+                        "correct_value": "hubris"
+                    },
+                    {
+                        "type": "text",
+                        "value": "."
+                    }
+                ]
+            }
+        }
+    }
+]

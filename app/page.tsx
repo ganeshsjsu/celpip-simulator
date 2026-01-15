@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import TestRunner from '../components/TestRunner';
 import test1Data from '../data/Test1.json';
 import test2Data from '../data/Test2.json';
+import test3Data from '../data/Test3.json';
 
 // Define available tests metadata
 const TESTS = [
@@ -18,6 +19,12 @@ const TESTS = [
     title: 'Practice Test 2',
     description: 'Topics: Office Credit, Rail Passes, Telegraph Cable, Right to Repair.',
     data: test2Data
+  },
+  {
+    id: 'test3',
+    title: 'Practice Test 3',
+    description: 'Topics: Invoice Dispute, Health Benefits, Hudson Bay Co, Solar Geoengineering.',
+    data: test3Data
   }
 ];
 

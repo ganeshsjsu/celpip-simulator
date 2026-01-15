@@ -258,7 +258,23 @@
                     },
                     {
                         "type": "text",
-                        "value": ". <br/><br/> Does that work with the previous group's timeline?"
+                        "value": ". <br/><br/> Also, since we are only booking for 2 hours (plus setup), do we meet the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q5",
+                        "options": [
+                            "minimum booking",
+                            "catering deadline",
+                            "cleaning fee",
+                            "safety code"
+                        ],
+                        "correct_value": "minimum booking",
+                        "explanation": "Rule says 'Minimum booking is 2 hours'. Their event is exactly 2 hours (12-2)."
+                    },
+                    {
+                        "type": "text",
+                        "value": " requirement?"
                     }
                 ]
             },
@@ -272,7 +288,7 @@
                     },
                     {
                         "type": "dropdown",
-                        "id": "q5",
+                        "id": "q6",
                         "options": [
                             "10:00",
                             "10:30",
@@ -288,7 +304,7 @@
                     },
                     {
                         "type": "dropdown",
-                        "id": "q6",
+                        "id": "q7",
                         "options": [
                             "2:00",
                             "3:00",
@@ -304,7 +320,7 @@
                     },
                     {
                         "type": "dropdown",
-                        "id": "q7",
+                        "id": "q8",
                         "options": [
                             "today",
                             "tomorrow",

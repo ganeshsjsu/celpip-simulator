@@ -557,7 +557,8 @@
                             "technology",
                             "pollution"
                         ],
-                        "correct_value": "sovereignty"
+                        "correct_value": "sovereignty",
+                        "explanation": "Vance argues that the atmosphere has no borders and questions 'Who decides?', highlighting the issue of national sovereignty."
                     },
                     {
                         "type": "text",
@@ -572,7 +573,8 @@
                             "science",
                             "nature"
                         ],
-                        "correct_value": "aggression"
+                        "correct_value": "aggression",
+                        "explanation": "Vance warns that unilateral geoengineering that harms other nations (e.g., causing drought) could be seen as weaponization or aggression."
                     },
                     {
                         "type": "text",
@@ -587,7 +589,8 @@
                             "export",
                             "rotation"
                         ],
-                        "correct_value": "failure"
+                        "correct_value": "failure",
+                        "explanation": "Rossi warns that 'termination shock' would destroy ecosystems and likely cause total crop failure for farmers."
                     },
                     {
                         "type": "text",
@@ -602,7 +605,8 @@
                             "rain",
                             "soil"
                         ],
-                        "correct_value": "stability"
+                        "correct_value": "stability",
+                        "explanation": "The fear of 'termination shock' implies the system relies on perfect stability; if it stops, disaster strikes."
                     },
                     {
                         "type": "text",
@@ -617,7 +621,8 @@
                             "charity",
                             "logic"
                         ],
-                        "correct_value": "hubris"
+                        "correct_value": "hubris",
+                        "explanation": "The title 'Playing God?' and the idea of controlling the global thermostat aligns with the concept of hubris (excessive pride)."
                     },
                     {
                         "type": "text",

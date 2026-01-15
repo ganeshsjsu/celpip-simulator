@@ -5,6 +5,7 @@ import TestRunner from '../components/TestRunner';
 import test1Data from '../data/Test1.json';
 import test2Data from '../data/Test2.json';
 import test3Data from '../data/Test3.json';
+import test4Data from '../data/Test4.json';
 
 // Define available tests metadata
 const TESTS = [
@@ -25,6 +26,12 @@ const TESTS = [
     title: 'Practice Test 3',
     description: 'Topics: Invoice Dispute, Health Benefits, Hudson Bay Co, Solar Geoengineering.',
     data: test3Data
+  },
+  {
+    id: 'test4',
+    title: 'Practice Test 4',
+    description: 'Topics: Gazebo Dispute, Hall Booking, Silk Road, Humanities Debate.',
+    data: test4Data
   }
 ];
 

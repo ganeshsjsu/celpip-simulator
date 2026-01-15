@@ -1,0 +1,626 @@
+[
+    {
+        "part_id": "p1",
+        "title": "Reading Part 1: Reading Correspondence",
+        "timer_seconds": 660,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Subject: Exterior Modifications - Unit 404</h3><p><strong>To:</strong> Mr. & Mrs. Gable<br/><strong>From:</strong> Oakwood Strata Council</p><p>Dear Residents,</p><p>It has come to the Council's attention that a new, semi-permanent gazebo structure has been erected on your balcony as of last Saturday. While we appreciate the desire to maximize outdoor living space during the summer months, we must remind you of Bylaw 7.3 regarding 'Uniformity of Exterior Appearance.'</p><p>The bylaw stipulates that any structure visible from the street level exceeding 4 feet in height requires prior written approval from the Architectural Committee. Your structure appears to be approximately 7 feet tall and utilizes a blue tarp material that is not in harmony with the building's earth-tone color palette.</p><p>We have received two formal complaints from neighbors regarding the obstruction of sightlines. Consequently, the Council has voted to issue a fine of $200. However, this fine will be suspended if the structure is removed or brought into compliance (i.e., lowered or replaced with approved beige canvas) within 72 hours.</p><p>Please notify the building manager of your intended course of action by Friday noon to avoid the fine becoming permanent on your account ledger.</p><p>Regards,<br/>Oakwood Strata Council</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The main reason for the Council's email is to...",
+                        "options": [
+                            "congratulate the Gables on their renovation",
+                            "demand the removal or modification of a structure",
+                            "invite them to a council meeting",
+                            "collect a late fee"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "They are demanding compliance with Bylaw 7.3 regarding the gazebo."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "What specific rule did the Gables violate?",
+                        "options": [
+                            "Building on a Saturday",
+                            "Using a blue tarp",
+                            "Exceeding 4 feet without approval",
+                            "Blocking a fire exit"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Bylaw 7.3: 'any structure... exceeding 4 feet in height requires prior written approval'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "The neighbors complained because...",
+                        "options": [
+                            "the gazebo is ugly",
+                            "it blocks their view",
+                            "it is too noisy",
+                            "it is unsafe"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Text mentions 'obstruction of sightlines'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "How can the Gables avoid paying the $200 fine?",
+                        "options": [
+                            "Pay immediately",
+                            "Remove or modify the structure within 72 hours",
+                            "Apologize to the neighbors",
+                            "Paint the gazebo blue"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "The fine is suspended if they remove/comply 'within 72 hours'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "What color is mandated by the building's code?",
+                        "options": [
+                            "Blue",
+                            "Earth-tone / Beige",
+                            "White",
+                            "Green"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Text mentions 'earth-tone color palette' and suggests 'approved beige canvas'."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "The tone of the letter is...",
+                        "options": [
+                            "Friendly and informal",
+                            "Bureaucratic and warning",
+                            "Angry and shouting",
+                            "Confused"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "It cites bylaws and deadlines formally but offers a way out ('suspended')."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Here is a response. Complete it by filling in the blanks.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Dear Council, <br/><br/> We are in receipt of your notice. We were unaware of the height restriction in Bylaw 7.3, as we thought it only applied to permanent "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "furniture",
+                            "renovations",
+                            "paint",
+                            "plants"
+                        ],
+                        "correct_value": "renovations",
+                        "explanation": "The writer contrasts 'permanent renovations' with their 'temporary tent'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ", not temporary tents. We apologize for the oversight. <br/><br/> We certainly do not want to block anyone's view. However, simply removing it is difficult as we have a family gathering this weekend and need the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "shade",
+                            "privacy",
+                            "storage",
+                            "room"
+                        ],
+                        "correct_value": "shade",
+                        "explanation": "A gazebo provides shade, which fits the context of using outdoor space in summer."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> Regarding the color, we are willing to replace the blue tarp with a "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "red",
+                            "beige",
+                            "black",
+                            "clear"
+                        ],
+                        "correct_value": "beige",
+                        "explanation": "The Council explicitly suggested replacing it with 'approved beige canvas'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " canvas as suggested. We can do this by Saturday morning. Would this satisfy the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "neighbors",
+                            "architects",
+                            "bylaw",
+                            "police"
+                        ],
+                        "correct_value": "bylaw",
+                        "explanation": "They want to satisfy the 'bylaw' requirement to avoid the fine."
+                    },
+                    {
+                        "type": "text",
+                        "value": " requirement and cancel the fine? <br/><br/> Please confirm if this "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q11",
+                        "options": [
+                            "extension",
+                            "compromise",
+                            "payment",
+                            "denial"
+                        ],
+                        "correct_value": "compromise",
+                        "explanation": "They are proposing a solution (changing the color) to meet halfway, which is a compromise."
+                    },
+                    {
+                        "type": "text",
+                        "value": " is acceptable. <br/> The Gables"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p2",
+        "title": "Reading Part 2: Reading to Apply a Diagram",
+        "timer_seconds": 480,
+        "layout_type": "split_image_form",
+        "left_panel_data": {
+            "image_src": "/images/test4_p2_hallbooking.png",
+            "image_generation_prompt": "Infographic diagram titled 'Metro Convention Center - Hall Booking Availability (June 12th)'. The diagram shows a timeline schedule for three halls: Hall A, Hall B, and Hall C.\n\n- **Hall A (Grand Ballroom)**: \n  - 08:00 - 12:00: 'Tech Corp AGM'\n  - 12:00 - 14:00: 'Cleaning / Turnover'\n  - 14:00 - 20:00: 'Wedding Expo Setup'\n\n- **Hall B (Lecture Theatre)**:\n  - 09:00 - 17:00: 'Medical Conference (All Day)'\n  - *Note: Audio/Visual equipment is locked until 08:30.*\n\n- **Hall C (Banquet Room)**:\n  - 08:00 - 10:00: 'Breakfast Rotary Club'\n  - 10:00 - 11:00: 'Turnover'\n  - 11:00 - 15:00: **AVAILABLE**\n  - 15:00 - 18:00: 'Charity Auction Setup'\n\nSide Bar: 'Rental Rules':\n- Minimum booking is 2 hours.\n- Load-in requires 1 hour prior to event start.\n- Catering must be finalized 48 hours in advance."
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "fill_in_the_blank",
+                "instructions": "Read the email regarding the diagram. Complete the email.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "<strong>To:</strong> Event Planner <br/> <strong>From:</strong> Client <br/><br/> Hi, I need to book a room for our 'Lunch & Learn' sales seminar on June 12th. We expect about 50 people. The event runs strictly from **12:00 PM to 2:00 PM**. <br/><br/> I looked at the schedule. **Hall A** is clearly out because they are doing "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q1",
+                        "options": [
+                            "a conference",
+                            "cleaning",
+                            "a wedding",
+                            "setup"
+                        ],
+                        "correct_value": "cleaning",
+                        "explanation": "The schedule shows 'Cleaning / Turnover' for Hall A from 12:00 to 14:00."
+                    },
+                    {
+                        "type": "text",
+                        "value": " during our time slot. <br/><br/> **Hall B** is also booked all day. That leaves **Hall C**. It looks like there is a slot available from "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q2",
+                        "options": [
+                            "8 to 10",
+                            "10 to 11",
+                            "11 to 3",
+                            "3 to 6"
+                        ],
+                        "correct_value": "11 to 3",
+                        "explanation": "Hall C is marked '**AVAILABLE**' from 11:00 to 15:00."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> My only concern is the setup. We need to bring in a projector and screens. The rules say we need "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q3",
+                        "options": [
+                            "30 mins",
+                            "1 hour",
+                            "2 hours",
+                            "48 hours"
+                        ],
+                        "correct_value": "1 hour",
+                        "explanation": "The sidebar rule states: 'Load-in requires 1 hour prior to event start'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " for load-in. Since our event starts at 12:00, we would need to get into the room at "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q4",
+                        "options": [
+                            "10:00",
+                            "11:00",
+                            "11:30",
+                            "12:00"
+                        ],
+                        "correct_value": "11:00",
+                        "explanation": "Event starts at 12:00, minus 1 hour for load-in = 11:00 AM."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> Does that work with the previous group's timeline?"
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the response.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Hi Client, <br/><br/> Good news! Yes, **Hall C** is the perfect fit. <br/><br/> The previous group (Rotary Club) finishes at 10:00 AM, and the venue staff has a turnover (cleaning) hour from 10:00 to 11:00. This means the room will be clean and unlocked for you exactly at "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q5",
+                        "options": [
+                            "10:00",
+                            "10:30",
+                            "11:00",
+                            "12:00"
+                        ],
+                        "correct_value": "11:00",
+                        "explanation": "The schedule shows 'Turnover' ends at 11:00, making the room available then."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> Since you need 1 hour to load in your projector, you will be finished setting up right when your guests arrive at 12:00. You have the room until "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "2:00",
+                            "3:00",
+                            "4:00",
+                            "5:00"
+                        ],
+                        "correct_value": "3:00",
+                        "explanation": "'Charity Auction Setup' begins at 15:00 (3:00 PM)."
+                    },
+                    {
+                        "type": "text",
+                        "value": ", so you don't have to rush out at 2:00 PM; you have an hour buffer before the Charity Auction sets up. <br/><br/> One reminder: since this is a 'Lunch & Learn', please send me your food choices by "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "today",
+                            "tomorrow",
+                            "June 10th",
+                            "June 12th"
+                        ],
+                        "correct_value": "June 10th",
+                        "explanation": "Rule: 'Catering must be finalized 48 hours in advance'. Event is June 12, so deadline is June 10."
+                    },
+                    {
+                        "type": "text",
+                        "value": " to meet the catering deadline."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p3",
+        "title": "Reading Part 3: Reading for Information",
+        "timer_seconds": 540,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<p><strong>A.</strong> The Silk Road was not a single paved road, but a shifting network of trade routes connecting the East and West for over 1,500 years. Originating during the Han Dynasty (206 BCE), it stretched some 4,000 miles from China, through India and Persia, ending in the Mediterranean. While silk was indeed the most famous commodity, the route facilitated the exchange of gold, wool, glass, and spices. More importantly, it acted as a superhighway for ideas, allowing Buddhism, Christianity, and Islam to spread across continents, alongside scientific innovations like gunpowder and paper.</p><p><strong>B.</strong> Travel along the Silk Road was perilous and rare for any single individual to traverse in its entirety. Instead, the route functioned as a relay system. A merchant might carry goods from Xi'an to the oasis city of Dunhuang, sell them to a middleman, who would transport them across the Taklamakan Desert to Kashgar. This segmentation meant that the price of goods inflated astronomically with each handoff. By the time Chinese silk reached Rome, it was worth its weight in gold, leading Roman Senate leaders to try (and fail) to ban it for being 'decadent and immoral.'</p><p><strong>C.</strong> The decline of the Silk Road began in the late 15th century, triggered by geopolitical shifts and technological disruption. The rise of the Ottoman Empire led to heavy taxation and blockades of land routes to the East. Simultaneously, European explorers like Vasco da Gama discovered maritime routes around Africa to India. Sea transport was faster, safer from bandits, and capable of carrying bulkier cargo than a camel caravan. Consequently, the ancient overland cities that relied on passing trade slowly withered into obscurity.</p><p><strong>D.</strong> In recent years, China has launched the 'Belt and Road Initiative' (BRI), often dubbed the 'New Silk Road.' This trillion-dollar infrastructure project aims to revitalize the ancient trade corridors through a vast network of railways, pipelines, and highways connecting Asia, Africa, and Europe. While proponents hail it as a vehicle for global economic development, critics warn of 'debt-trap diplomacy,' where developing nations default on Chinese loans and are forced to cede control of strategic assets, such as ports, as collateral.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "matching",
+                "instructions": "Decide which paragraph, A to D, has the information given in each statement below. Select E if the information is not given.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The specific reason why Romans tried to ban silk.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B states the Senate tried to ban it for being 'decadent and immoral'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "A modern infrastructure project aiming to recreate ancient trade links.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D mentions the 'Belt and Road Initiative' (BRI)."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "The exact length of time it took to travel from China to Rome.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Paragraph A gives the distance (4,000 miles) and years (1,500), but NOT the travel time for a trip. (Not Given)."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "Mention of a specific explorer who found a sea route to India.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C mentions 'Vasco da Gama'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "How the trade route influenced the spread of religion.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A mentions it allowed 'Buddhism, Christianity, and Islam to spread'."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "The reason why goods became expensive by the time they reached the West.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B explains the 'relay system' and 'handoffs' caused inflation."
+                    },
+                    {
+                        "id": "q7",
+                        "prompt": "A list of diseases that were transmitted along the route.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Historically true (Plague), but NOT in the text. (Not Given)."
+                    },
+                    {
+                        "id": "q8",
+                        "prompt": "The political reason for the decline of the land route.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C mentions the 'rise of the Ottoman Empire' and 'heavy taxation'."
+                    },
+                    {
+                        "id": "q9",
+                        "prompt": "Criticism regarding the financial risks for developing nations today.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D mentions 'debt-trap diplomacy'."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p4",
+        "title": "Reading Part 4: Reading for Viewpoints",
+        "timer_seconds": 720,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>The Death of the English Major?</h3><p>Enrollment in humanities programs has plummeted by 25% over the last decade, sparking a fierce debate about the utility of a liberal arts education in a tech-centric economy. Parents and policymakers increasingly view university as a vocational training ground, prioritizing STEM (Science, Technology, Engineering, Math) degrees that offer a clearer return on investment.</p><p>Venture capitalist Marc Andreessen famously quipped that liberal arts degrees are a \"ticket to Starbucks,\" implying they lead only to low-wage service jobs. He argues that in an era of artificial intelligence and automation, hard technical skills are the only currency of value. \"Knowing Shakespeare won't help you code a neural network,\" Andreessen asserts. He advocates for a radical restructuring of higher education to focus on coding, data science, and engineering to meet market demand.</p><p>However, technology ethicist Dr. Leonie Hass counters that this \"STEM-only\" myopia is dangerous. She argues that while coding is useful, the ability to think critically, analyze complex ethical dilemmas, and communicate persuasively is what separates humans from algorithms. \"We are building powerful tools without the philosophical framework to understand their impact,\" Hass warns. She points out that many tech CEOs, including the founders of Slack and Airbnb, hold humanities degrees, proving that soft skills are vital for leadership.</p><p>Professor David Graeber adds a socioeconomic layer to the debate. He suggests the shift away from humanities is not just economic but political. \"A populace trained only in technical utility is easier to manage than one trained to question authority and history,\" Graeber contends. He views the defunding of the arts as a strategy to enforce intellectual conformity.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "Marc Andreessen believes that liberal arts degrees...",
+                        "options": [
+                            "are essential for leadership",
+                            "lead to poor job prospects",
+                            "help with AI development",
+                            "are expensive but worth it"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He calls them a 'ticket to Starbucks' (low-wage jobs)."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "Dr. Leonie Hass argues that humanities are important because...",
+                        "options": [
+                            "they teach coding",
+                            "they help us understand ethical impacts",
+                            "they are easier than STEM",
+                            "they make more money"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She says we need the 'philosophical framework to understand their impact'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "Professor Graeber believes the push for STEM is motivated by...",
+                        "options": [
+                            "a desire for control",
+                            "market demand",
+                            "student interest",
+                            "technological progress"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "He says a technical populace is 'easier to manage' and it enforces 'conformity'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "The phrase 'STEM-only myopia' implies that focusing only on tech is...",
+                        "options": [
+                            "visionary",
+                            "short-sighted",
+                            "profitable",
+                            "necessary"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "'Myopia' means nearsightedness/short-sightedness."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "Who mentions the founders of Slack and Airbnb?",
+                        "options": [
+                            "Andreessen",
+                            "Hass",
+                            "Graeber",
+                            "The narrator"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Dr. Hass uses them as examples of leaders with humanities degrees."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the comment by choosing the best option.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "As a hiring manager at a software firm, I find this debate fascinating. I often see candidates with perfect coding scores who cannot write a coherent email. I agree with Dr. Hass that "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "hard skills",
+                            "soft skills",
+                            "math skills",
+                            "typing skills"
+                        ],
+                        "correct_value": "soft skills",
+                        "explanation": "Dr. Hass argues for 'soft skills' like critical thinking and communication."
+                    },
+                    {
+                        "type": "text",
+                        "value": " are vital. However, I can't ignore Andreessen's point about the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "market",
+                            "history",
+                            "philosophy",
+                            "art"
+                        ],
+                        "correct_value": "market",
+                        "explanation": "Andreessen argues for focusing on skills that 'meet market demand'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". If a student graduates with $100k in debt and no marketable skill, that is a tragedy. The solution isn't to kill the humanities, but to "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "separate",
+                            "integrate",
+                            "ban",
+                            "ignore"
+                        ],
+                        "correct_value": "integrate",
+                        "explanation": "The writer says we need engineers who read history, implying an integration of both fields."
+                    },
+                    {
+                        "type": "text",
+                        "value": " them. We need engineers who read history and writers who understand "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "Shakespeare",
+                            "data",
+                            "poetry",
+                            "latin"
+                        ],
+                        "correct_value": "data",
+                        "explanation": "This parallels 'engineers who read history'—writers need to understand technical concepts like data."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Graeber's conspiracy theory about political control seems a bit "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "accurate",
+                            "paranoid",
+                            "helpful",
+                            "scientific"
+                        ],
+                        "correct_value": "paranoid",
+                        "explanation": "Calling it a 'conspiracy theory' suggests the writer finds the idea of political control 'paranoid' or exaggerated."
+                    },
+                    {
+                        "type": "text",
+                        "value": " to me; honestly, parents just want their kids to get jobs."
+                    }
+                ]
+            }
+        }
+    }
+]

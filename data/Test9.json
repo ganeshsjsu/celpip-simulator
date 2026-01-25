@@ -1,0 +1,642 @@
+[
+    {
+        "part_id": "p1",
+        "title": "Reading Part 1: Reading Correspondence",
+        "timer_seconds": 660,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Subject: Unexcused Absence - October 14th</h3><p><strong>To:</strong> Jason Boyd<br/><strong>From:</strong> Shift Supervisor (Sarah)</p><p>Dear Jason,</p><p>I am writing to document your absence from your scheduled shift yesterday, Saturday, October 14th (12:00 PM - 8:00 PM). As you know, we were short-staffed due to the holiday rush, and your failure to show up placed a significant burden on the rest of the team.</p><p>I checked the 'Shift Swap' log in the break room, and there is no record of you trading this shift with anyone. When I called you at 12:30 PM, you mentioned that you had 'verbally agreed' with Dave to switch days. However, as stated in the Employee Handbook (Page 12), <em>\"All shift changes must be signed by both parties and approved by a manager at least 24 hours in advance.\"</em></p><p>Since this protocol was not followed, this counts as a 'No Call / No Show.' This is your second infraction this month. A third infraction will result in automatic termination.</p><p>Please meet me in my office on Monday at 9:00 AM to sign the formal warning notice. If you have any text messages proving Dave agreed to cover you, please bring them, as that may mitigate the penalty, though it does not excuse the lack of manager approval.</p><p>Regards,<br/>Sarah</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "Sarah is writing to Jason to...",
+                        "options": [
+                            "fire him",
+                            "ask him to work overtime",
+                            "document a missed shift",
+                            "approve a shift swap"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "The email is to 'document your absence' and issue a warning."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "Why was Jason's absence particularly problematic?",
+                        "options": [
+                            "It was Sarah's birthday",
+                            "The store was closed",
+                            "It was a holiday rush",
+                            "Dave was also sick"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Sarah notes: 'we were short-staffed due to the holiday rush'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "Jason claims he...",
+                        "options": [
+                            "was sick",
+                            "forgot the time",
+                            "swapped with Dave",
+                            "quit the job"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "He claimed he had 'verbally agreed with Dave to switch days'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "Why is the swap invalid according to Sarah?",
+                        "options": [
+                            "Dave didn't show up",
+                            "It wasn't signed or approved",
+                            "It was a holiday",
+                            "Jason is lying"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "The handbook requires changes to be 'signed by both parties and approved by a manager'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "What is the consequence of a third infraction?",
+                        "options": [
+                            "A pay cut",
+                            "A formal warning",
+                            "Automatic termination",
+                            "Loss of holiday pay"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Sarah states: 'A third infraction will result in automatic termination'."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "How can Jason potentially reduce the penalty?",
+                        "options": [
+                            "By apologizing",
+                            "By working extra hours",
+                            "By showing proof Dave agreed",
+                            "By quitting"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Sarah asks him to 'bring text messages proving Dave agreed... as that may mitigate the penalty'."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Here is a response. Complete it by filling in the blanks.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Hi Sarah, <br/><br/> I understand the protocol, and I apologize for not getting the manager's approval. It was a last-minute emergency because my "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "car broke down",
+                            "alarm didn't go off",
+                            "cat died",
+                            "friend called"
+                        ],
+                        "correct_value": "car broke down",
+                        "explanation": "A plausible emergency reason for a last-minute swap."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> I do have the texts from Dave. He explicitly said, \"I will cover you on Saturday if you take my Tuesday shift.\" I will bring these on "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "Sunday",
+                            "Monday",
+                            "Tuesday",
+                            "Saturday"
+                        ],
+                        "correct_value": "Monday",
+                        "explanation": "Sarah asked him to meet 'on Monday at 9:00 AM'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> I feel it is unfair to call this a 'No Call / No Show' since I did think the shift was covered. Dave is the one who "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "flaked",
+                            "worked",
+                            "called",
+                            "signed"
+                        ],
+                        "correct_value": "flaked",
+                        "explanation": "Slang for failing to show up; implies Dave is at fault for the empty shift."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". However, I accept that I should have called the store to confirm. Please do not "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "pay me",
+                            "fire me",
+                            "write me up",
+                            "call me"
+                        ],
+                        "correct_value": "fire me",
+                        "explanation": "He is worried about the 'automatic termination' threat mentioned in the email."
+                    },
+                    {
+                        "type": "text",
+                        "value": " over this misunderstanding. I appreciate your "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q11",
+                        "options": [
+                            "patience",
+                            "anger",
+                            "confusion",
+                            "money"
+                        ],
+                        "correct_value": "patience",
+                        "explanation": "A standard professional closing to de-escalate the situation."
+                    },
+                    {
+                        "type": "text",
+                        "value": " in listening to my side. <br/><br/> Jason"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p2",
+        "title": "Reading Part 2: Reading to Apply a Diagram",
+        "timer_seconds": 480,
+        "layout_type": "split_image_form",
+        "left_panel_data": {
+            "image_src": "/images/test9_p2_rental.png",
+            "image_generation_prompt": "Infographic table titled 'Downtown Rental Options: October Availability'. Three columns: 'The Basement Studio', 'City View 1-Bed', and 'Luxury Loft'.\n\nRow 1: 'Monthly Rent'. Basement: $1,200. City View: $1,800. Loft: $2,500.\nRow 2: 'Utilities'. Basement: Included (All). City View: Water only (Tenant pays Hydro). Loft: Not Included.\nRow 3: 'Parking'. Basement: Street Only. City View: $100/mo (Underground). Loft: 2 Spots Included.\nRow 4: 'Pet Policy'. Basement: No Pets. City View: Cats Only ($50 fee). Loft: All Pets Welcome.\n\nFine Print Box (Red): '*Lease Term: Basement is Month-to-Month. City View and Loft require a 1-year lease. *Move-in Bonus: Sign a 1-year lease by Oct 31st and get the first month 50% off.'"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "fill_in_the_blank",
+                "instructions": "Read the email regarding the diagram. Complete the email.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "<strong>To:</strong> Rental Agent <br/> <strong>From:</strong> Prospective Tenant <br/><br/> Hi, I'm looking to move downtown on November 1st. I have a car and a Golden Retriever dog, so my options are limited. <br/><br/> I really like the price of **The Basement Studio**, but I absolutely cannot take it because of the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q1",
+                        "options": [
+                            "price",
+                            "pet policy",
+                            "location",
+                            "size"
+                        ],
+                        "correct_value": "pet policy",
+                        "explanation": "Row 4: Basement says 'No Pets'. Tenant has a dog."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> The **City View 1-Bed** looks nice, but I see the pet policy says "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q2",
+                        "options": [
+                            "All Pets",
+                            "No Pets",
+                            "Cats Only",
+                            "Dogs Only"
+                        ],
+                        "correct_value": "Cats Only",
+                        "explanation": "Row 4: City View is 'Cats Only'. Tenant has a dog."
+                    },
+                    {
+                        "type": "text",
+                        "value": ", so that rules it out too since I have a dog. <br/><br/> That leaves the **Luxury Loft**. It is expensive ($2,500), but at least the parking is "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q3",
+                        "options": [
+                            "$100",
+                            "unavailable",
+                            "included",
+                            "street only"
+                        ],
+                        "correct_value": "included",
+                        "explanation": "Row 3: Loft says '2 Spots Included'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> My only worry is the utility bill. Since the Loft includes "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q4",
+                        "options": [
+                            "all utilities",
+                            "water only",
+                            "no utilities",
+                            "internet"
+                        ],
+                        "correct_value": "no utilities",
+                        "explanation": "Row 2: Loft says 'Not Included'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ", I'll have to budget extra for heat and lights. <br/><br/> Also, since I am moving in Nov 1st, do I qualify for the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q5",
+                        "options": [
+                            "free parking",
+                            "move-in bonus",
+                            "month-to-month",
+                            "pet fee"
+                        ],
+                        "correct_value": "move-in bonus",
+                        "explanation": "Fine print: 'Sign a 1-year lease by Oct 31st'."
+                    },
+                    {
+                        "type": "text",
+                        "value": " if I sign the papers this week?"
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the response.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Hi Tenant, <br/><br/> You are correct. For a dog owner, the **Luxury Loft** is your only option among these three. <br/><br/> Regarding the Move-In Bonus: Yes! As long as you sign the lease before "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "Oct 31st",
+                            "Nov 1st",
+                            "Dec 1st",
+                            "Christmas"
+                        ],
+                        "correct_value": "Oct 31st",
+                        "explanation": "Fine print deadline is Oct 31st."
+                    },
+                    {
+                        "type": "text",
+                        "value": ", you will get 50% off your first month. That means for November, you will only pay "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "$1,200",
+                            "$1,250",
+                            "$1,800",
+                            "$2,500"
+                        ],
+                        "correct_value": "$1,250",
+                        "explanation": "50% of $2,500 is $1,250."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> Keep in mind that the Loft requires a "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "1-year lease",
+                            "month-to-month lease",
+                            "6-month lease",
+                            "verbal agreement"
+                        ],
+                        "correct_value": "1-year lease",
+                        "explanation": "Fine print: 'City View and Loft require a 1-year lease'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ", so make sure you are ready to commit for 12 months."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p3",
+        "title": "Reading Part 3: Reading for Information",
+        "timer_seconds": 540,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<p><strong>A.</strong> The invention of the printing press is often attributed solely to Johannes Gutenberg in 15th-century Germany, but the history is more complex. Movable type—the concept of using individual characters to build pages—was actually invented in China by Bi Sheng around 1040 AD, utilizing fragile porcelain characters. Two centuries later, Koreans developed metal movable type. However, these Eastern innovations did not spark a mass revolution in literacy, largely because the Chinese and Korean writing systems required thousands of distinct characters, making typesetting a slow and laborious process compared to the simple 26-letter Roman alphabet.</p><p><strong>B.</strong> Gutenberg's genius lay not in the idea of the press itself, which was adapted from wine and olive presses, but in his synthesis of technologies. He developed a unique oil-based ink that adhered to metal, created a hand casting system to mass-produce letters cheaply, and utilized a wooden screw press mechanism. In 1455, he completed his masterpiece: the Gutenberg Bible. While aesthetically beautiful, the project was a financial disaster. Gutenberg was sued by his investor, Johann Fust, and lost control of his workshop just as the technology began to take off.</p><p><strong>C.</strong> The impact of the printing press on European society was explosive. Before 1450, books were hand-copied by monks, making them rare luxury items costing the equivalent of a house. By 1500, printing presses were operating in over 200 cities, producing millions of volumes. This drastic drop in cost democratized knowledge. It fueled the Protestant Reformation, as Martin Luther's theses could be printed and circulated rapidly, bypassing the Church's control of information. It also laid the groundwork for the Scientific Revolution by allowing researchers to share accurate data and diagrams.</p><p><strong>D.</strong> Despite its success, the spread of printing faced resistance. Scribes and illuminators rioted, fearing for their livelihoods. Governments and the Church instituted censorship laws to control the flow of \"heretical\" or \"seditious\" material. In 1501, Pope Alexander VI threatened excommunication for anyone printing books without approval. Nevertheless, the genie was out of the bottle. The ability to disseminate dissent cheaply meant that no central authority could ever fully control the public narrative again.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "matching",
+                "instructions": "Decide which paragraph, A to D, has the information given in each statement below. Select E if the information is not given.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The name of the Chinese inventor who created porcelain movable type.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A mentions 'Bi Sheng around 1040 AD'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "The specific year Gutenberg completed his Bible.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B states: 'In 1455, he completed his masterpiece'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "Why movable type was less successful in Asia than in Europe.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A explains that Asian writing systems 'required thousands of distinct characters'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "The exact cost of a Gutenberg Bible in 1455 dollars.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Not mentioned. Text says books *before* 1450 cost a house, but doesn't give the Bible's price. (E)."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "Gutenberg's legal troubles with his business partner.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B mentions he was 'sued by his investor, Johann Fust'."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "The reaction of religious authorities to the spread of uncontrolled books.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D mentions Pope Alexander VI threatening excommunication."
+                    },
+                    {
+                        "id": "q7",
+                        "prompt": "How the press contributed to scientific progress.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C says it allowed researchers to 'share accurate data and diagrams'."
+                    },
+                    {
+                        "id": "q8",
+                        "prompt": "The number of printing presses in operation by the year 1600.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Paragraph C mentions 200 cities by *1500*, not presses by *1600*. (E)."
+                    },
+                    {
+                        "id": "q9",
+                        "prompt": "Workers who violently opposed the new technology.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D states 'Scribes and illuminators rioted'."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p4",
+        "title": "Reading Part 4: Reading for Viewpoints",
+        "timer_seconds": 720,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Space: The Final Frontier or the Next Gold Rush?</h3><p>The race to space has shifted from a competition between superpowers to a scramble among billionaires. With private companies like SpaceX and Blue Origin launching regular missions, humanity stands on the precipice of a commercial space age. Advocates argue this privatization is the only sustainable path to the stars, while critics warn of an unregulated oligopoly that threatens the sanctity of the cosmos.</p><p>Aerospace entrepreneur Leo Varga asserts that government agencies like NASA are bogged down by bureaucracy and risk aversion. \"The taxpayer cannot fund the colonization of Mars,\" Varga argues. \"Only the profit motive can drive the efficiency required to lower launch costs.\" He points to the reusability of modern rockets—a private sector innovation—as proof that competition breeds progress. Varga envisions a future where asteroid mining provides infinite resources, ending scarcity on Earth.</p><p>However, astrophysicist Dr. Elena Rossi cautions against the \"tragedy of the orbital commons.\" She highlights the growing issue of space debris, where thousands of defunct satellites threaten to trap humanity on Earth by making launch trajectories too dangerous (the Kessler Syndrome). \"Private companies are filling the sky with disposable junk for internet profits,\" Rossi contends. She also raises ethical concerns about \"planetary protection,\" fearing that unregulated commercial landers could contaminate pristine alien environments with Earth bacteria, ruining scientific study forever.</p><p>International law expert Marcus Thorne suggests that the current Outer Space Treaty of 1967 is obsolete. \"It forbids nuclear weapons but says nothing about Elon Musk declaring himself King of Mars,\" Thorne notes. He calls for a new global framework to treat space as a 'Common Heritage of Mankind,' ensuring that resources extracted from asteroids benefit all nations, not just a few tech moguls.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "Leo Varga criticizes NASA for being...",
+                        "options": [
+                            "too expensive",
+                            "bureaucratic and risk-averse",
+                            "corrupt",
+                            "too aggressive"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He says agencies are 'bogged down by bureaucracy and risk aversion'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "What is the 'Kessler Syndrome' mentioned by Dr. Rossi?",
+                        "options": [
+                            "A disease from Mars",
+                            "A legal loophole",
+                            "Debris making launches dangerous",
+                            "Rocket fuel pollution"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "It refers to 'defunct satellites... making launch trajectories too dangerous'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "Marcus Thorne believes the Outer Space Treaty is...",
+                        "options": [
+                            "perfect",
+                            "obsolete",
+                            "too strict",
+                            "illegal"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He suggests the treaty is 'obsolete' (outdated)."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "Varga believes that asteroid mining could...",
+                        "options": [
+                            "destroy the economy",
+                            "end scarcity on Earth",
+                            "cause wars",
+                            "pollute space"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He envisions it 'ending scarcity on Earth'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "Dr. Rossi fears that commercial landers might...",
+                        "options": [
+                            "crash on Earth",
+                            "contaminate alien environments",
+                            "steal resources",
+                            "break the law"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She mentions 'contaminate pristine alien environments with Earth bacteria'."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the comment by choosing the best option.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "I'm an amateur astronomer, and I've watched my clear night skies disappear behind \"satellite constellations.\" Dr. Rossi is right about the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "cost",
+                            "debris",
+                            "noise",
+                            "light"
+                        ],
+                        "correct_value": "debris",
+                        "explanation": "Context: 'clear night skies disappear' and Rossi's point about debris/junk."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". It feels like vandalism. However, I can't dismiss Varga's point about "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "efficiency",
+                            "pollution",
+                            "aliens",
+                            "taxes"
+                        ],
+                        "correct_value": "efficiency",
+                        "explanation": "Varga argues for 'efficiency required to lower launch costs'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". NASA was stuck in low earth orbit for decades until SpaceX came along. The solution isn't to ban private companies, but to "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "fund",
+                            "ignore",
+                            "regulate",
+                            "nationalize"
+                        ],
+                        "correct_value": "regulate",
+                        "explanation": "Thorne suggests a 'new global framework', implying regulation."
+                    },
+                    {
+                        "type": "text",
+                        "value": " them, as Thorne suggests. Space should not be the Wild West. If we find gold on an asteroid, the wealth should be shared, not hoarded by a "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "government",
+                            "scientist",
+                            "oligopoly",
+                            "robot"
+                        ],
+                        "correct_value": "oligopoly",
+                        "explanation": "Refers to the 'unregulated oligopoly' mentioned in the intro and by critics."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". We need to be stewards of the cosmos, not just "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "explorers",
+                            "exploiters",
+                            "observers",
+                            "drivers"
+                        ],
+                        "correct_value": "exploiters",
+                        "explanation": "Contrast with 'stewards'."
+                    },
+                    {
+                        "type": "text",
+                        "value": "."
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,642 @@
+[
+    {
+        "part_id": "p1",
+        "title": "Reading Part 1: Reading Correspondence",
+        "timer_seconds": 660,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Subject: Incorrect Billing Statement - Account #8821</h3><p><strong>To:</strong> IronClad Fitness Management<br/><strong>From:</strong> Julia Santos</p><p>Dear Member Services,</p><p>I noticed a charge of $65 on my credit card statement dated November 1st. This is unexpected because I submitted a 'Medical Freeze Request' form two weeks ago (on October 15th) due to a knee surgery I have scheduled for next week.</p><p>According to the employee I spoke with at the front desk, Mike, my membership billing would be suspended immediately upon submission of the doctor's note, which I attached to the form. Mike assured me I would not be billed for November.</p><p>However, your email yesterday stated that this $65 is a 'Cancellation Fee.' I want to clarify: I am <strong>not</strong> cancelling my membership. I am merely pausing it for 3 months as permitted under the 'Injury & Recovery' clause of my contract. Cancelling would require me to pay a re-initiation fee when I return, which I obviously want to avoid.</p><p>Please refund the $65 immediately and confirm that my status is set to 'Frozen' rather than 'Cancelled.' If this is not resolved by Friday, I will have to dispute the transaction with my bank.</p><p>Regards,<br/>Julia Santos</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "Julia is contacting the gym to...",
+                        "options": [
+                            "cancel her membership",
+                            "correct a billing error",
+                            "book a personal training session",
+                            "complain about Mike"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She is disputing an incorrect charge of $65."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "Why did Julia submit a request on October 15th?",
+                        "options": [
+                            "She is moving away",
+                            "She found a cheaper gym",
+                            "She has an upcoming surgery",
+                            "She is unhappy with the service"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "She mentions 'due to a knee surgery I have scheduled'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "What did Mike tell Julia?",
+                        "options": [
+                            "She must pay a fee",
+                            "Her billing would stop immediately",
+                            "She needs a new doctor",
+                            "She cannot freeze her account"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Mike assured her she 'would not be billed for November'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "The gym incorrectly processed her request as...",
+                        "options": [
+                            "a cancellation",
+                            "a freeze",
+                            "a renewal",
+                            "a guest pass"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "The email stated the $65 was a 'Cancellation Fee'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "Why does Julia want to avoid cancelling?",
+                        "options": [
+                            "She loves the gym",
+                            "She would have to pay a re-initiation fee later",
+                            "She signed a 5-year contract",
+                            "She wants to keep her locker"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She states: 'Cancelling would require me to pay a re-initiation fee when I return'."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "What documents did Julia provide?",
+                        "options": [
+                            "Her credit card",
+                            "A doctor's note",
+                            "A police report",
+                            "Her ID"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She mentions submission of the 'doctor's note'."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Here is a response. Complete it by filling in the blanks.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Dear Julia, <br/><br/> Thank you for your email. I have reviewed your file and I can see the error. It appears that the staff member, Mike, accidentally checked the 'Terminate' box instead of the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "Renew",
+                            "Suspend",
+                            "Refund",
+                            "Upgrade"
+                        ],
+                        "correct_value": "Suspend",
+                        "explanation": "She wanted a 'freeze' or suspension, not termination."
+                    },
+                    {
+                        "type": "text",
+                        "value": " box in our system. <br/><br/> Because of this, the system automatically generated the standard cancellation fee. I have reversed this transaction today. The $65 should appear back on your card within "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "minutes",
+                            "3-5 business days",
+                            "a month",
+                            "a year"
+                        ],
+                        "correct_value": "3-5 business days",
+                        "explanation": "Standard banking refund timeframe."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> Your account is now officially frozen for 3 months. During this time, your monthly dues will be "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "$65",
+                            "$0",
+                            "$10",
+                            "doubled"
+                        ],
+                        "correct_value": "$0",
+                        "explanation": "A freeze implies no billing."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". Please note that your access keycard will be deactivated until you bring in a "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "payment",
+                            "medical clearance note",
+                            "new photo",
+                            "guest"
+                        ],
+                        "correct_value": "medical clearance note",
+                        "explanation": "Since she left for surgery, gyms typically require clearance to return."
+                    },
+                    {
+                        "type": "text",
+                        "value": " from your doctor confirming you are fit to exercise again. <br/><br/> We wish you a speedy "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q11",
+                        "options": [
+                            "cancellation",
+                            "recovery",
+                            "holiday",
+                            "workout"
+                        ],
+                        "correct_value": "recovery",
+                        "explanation": "Context of surgery."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/> Management"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p2",
+        "title": "Reading Part 2: Reading to Apply a Diagram",
+        "timer_seconds": 480,
+        "layout_type": "split_image_form",
+        "left_panel_data": {
+            "image_src": "/images/test8_p2_courses.png",
+            "image_generation_prompt": "Infographic table titled 'Spring Semester Course Selection - Computer Science'. Four columns: 'Course Code', 'Time Slot', 'Prerequisites', and 'Restrictions'.\n\nRow 1: 'CS 101: Intro to Coding'. Time: Mon/Wed 10:00-11:30. Prereq: None. Restriction: Open to All.\nRow 2: 'CS 205: Data Structures'. Time: Tue/Thu 14:00-16:00. Prereq: CS 101 (Grade B or higher). Restriction: CS Majors Only.\nRow 3: 'MATH 300: Linear Algebra'. Time: Mon/Wed 10:00-11:30. Prereq: MATH 101. Restriction: Open to All.\nRow 4: 'CS 400: AI Project'. Time: Fridays 09:00-12:00. Prereq: CS 205 + Senior Standing. Restriction: Instructor Approval Required.\n\nFine Print Box (Red): '*Credit Overload: Students wishing to take more than 4 courses must have a GPA of 3.5+. *Waitlist: If a course is full, majors get priority on the waitlist. *Exam Conflict: Do not book courses with overlapping final exam times.'"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "fill_in_the_blank",
+                "instructions": "Read the email regarding the diagram. Complete the email.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "<strong>To:</strong> Academic Advisor <br/> <strong>From:</strong> Student (Sophomore/2nd Year) <br/><br/> Hi, I need help planning my schedule. I am officially declared as a **History Major**, but I want to minor in CS. <br/><br/> I took CS 101 last semester and got an 'A', so I really want to take **CS 205: Data Structures** next. However, looking at the chart, I see I am "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q1",
+                        "options": [
+                            "eligible",
+                            "blocked due to grades",
+                            "blocked due to major",
+                            "blocked due to time"
+                        ],
+                        "correct_value": "blocked due to major",
+                        "explanation": "CS 205 Restriction is 'CS Majors Only'. He is a History Major."
+                    },
+                    {
+                        "type": "text",
+                        "value": " because of the restriction. Is there any way to get an exception? <br/><br/> Also, I need to take **MATH 300** to finish my math requirement. The problem is, it meets at the exact same time as "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q2",
+                        "options": [
+                            "CS 101",
+                            "CS 205",
+                            "CS 400",
+                            "Lunch"
+                        ],
+                        "correct_value": "CS 101",
+                        "explanation": "MATH 300 is Mon/Wed 10:00-11:30. CS 101 is ALSO Mon/Wed 10:00-11:30."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". (Wait, I already took 101, so that doesn't matter). <br/><br/> Lastly, I am interested in **CS 400**. Since I have an 'A' in CS 101, am I eligible? I suspect not because I lack "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q3",
+                        "options": [
+                            "money",
+                            "senior standing",
+                            "math skills",
+                            "a laptop"
+                        ],
+                        "correct_value": "senior standing",
+                        "explanation": "CS 400 requires 'Senior Standing'. He is a Sophomore (2nd year)."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". <br/><br/> If I take 5 courses this term, do I need special permission? My GPA is 3.2. Based on the rules, I am "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q4",
+                        "options": [
+                            "qualified",
+                            "not qualified",
+                            "waitlisted",
+                            "approved"
+                        ],
+                        "correct_value": "not qualified",
+                        "explanation": "Fine print: 'Overload... must have a GPA of 3.5+'. His is 3.2."
+                    },
+                    {
+                        "type": "text",
+                        "value": " for an overload. One last question: if the Math class is full, do I get priority on the waitlist? The chart says priority is given to "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q5",
+                        "options": [
+                            "Seniors",
+                            "Majors",
+                            "History students",
+                            "Professors"
+                        ],
+                        "correct_value": "Majors",
+                        "explanation": "Fine print: 'If a course is full, majors get priority'."
+                    },
+                    {
+                        "type": "text",
+                        "value": "."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the response.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "Hi Student, <br/><br/> You are correct about **CS 205**. Since it is restricted to CS Majors, you cannot register yourself. However, since you earned an 'A' in the prerequisite, I can submit a "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "waiver request",
+                            "new major",
+                            "grade change",
+                            "refund"
+                        ],
+                        "correct_value": "waiver request",
+                        "explanation": "Advisors can waive restrictions for qualified non-majors."
+                    },
+                    {
+                        "type": "text",
+                        "value": " to the professor. If seats are available, they might let you in. <br/><br/> Regarding **CS 400**, you definitely cannot take it yet. It requires both Senior Standing and "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "CS 101",
+                            "CS 205",
+                            "Math 300",
+                            "History"
+                        ],
+                        "correct_value": "CS 205",
+                        "explanation": "Prerequisite column for CS 400 lists 'CS 205'."
+                    },
+                    {
+                        "type": "text",
+                        "value": ", which you haven't done. <br/><br/> For the course overload, since your GPA is 3.2, you are under the 3.5 cutoff. You will have to stick to "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "3 courses",
+                            "4 courses",
+                            "5 courses",
+                            "6 courses"
+                        ],
+                        "correct_value": "4 courses",
+                        "explanation": "The limit before 'overload' rules apply is 4 courses."
+                    },
+                    {
+                        "type": "text",
+                        "value": " max this semester. <br/><br/> Let me know if you want me to try for the CS 205 exception."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p3",
+        "title": "Reading Part 3: Reading for Information",
+        "timer_seconds": 540,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<p><strong>A.</strong> The discovery of antibiotics is often hailed as the greatest medical breakthrough of the 20th century. Before their advent, minor infections from a scratch or a dental procedure could be fatal. The turning point came in 1928, when Scottish biologist Alexander Fleming returned from holiday to find that a mold called <em>Penicillium notatum</em> had contaminated a petri dish of Staphylococcus bacteria. Remarkably, the mold had created a bacteria-free circle around itself. Fleming identified the active substance as \"penicillin,\" though he struggled to isolate it in stable quantities.</p><p><strong>B.</strong> It wasn't until the late 1930s that a team at Oxford University, led by Howard Florey and Ernst Chain, succeeded in purifying penicillin for human use. The first patient treated was Albert Alexander, a policeman who had scratched his face on a rose bush. While the drug initially cleared his infection, supplies ran out, and he tragically died. This failure spurred the team to seek mass-production methods. With World War II raging, the US government invested heavily in deep-tank fermentation techniques, allowing penicillin to be mass-produced by 1944, saving thousands of soldiers from gangrene.</p><p><strong>C.</strong> Following the war, the \"Golden Age\" of antibiotic discovery began. Scientists scoured soil samples from around the world, leading to the discovery of streptomycin (effective against tuberculosis) and tetracycline. These drugs revolutionized surgery, chemotherapy, and organ transplants, all of which rely on suppressing the immune system and thus require protection from infection. Life expectancy in the developed world soared, and infectious diseases that had plagued humanity for millennia seemed to be conquered.</p><p><strong>D.</strong> However, Fleming himself warned of a future danger in his 1945 Nobel Prize acceptance speech: antibiotic resistance. He predicted that if the drugs were used too sparingly or for too short a time, bacteria would evolve to survive. Today, this prediction has come true. Overuse of antibiotics in agriculture and unnecessary prescriptions for viral infections (like the flu) have bred \"superbugs\" like MRSA. The World Health Organization now lists antimicrobial resistance as a top global health threat, warning that we may be entering a \"post-antibiotic era\" where common injuries could once again kill.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "matching",
+                "instructions": "Decide which paragraph, A to D, has the information given in each statement below. Select E if the information is not given.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "The name of the first human patient treated with purified penicillin.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B mentions 'Albert Alexander, a policeman'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "The specific year Fleming discovered the mold in his petri dish.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 0,
+                        "explanation": "Paragraph A states: 'The turning point came in 1928'."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "The reason why the first treated patient eventually died.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B states: 'supplies ran out, and he tragically died'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "A list of modern surgical procedures that depend on antibiotics.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "Paragraph C lists 'surgery, chemotherapy, and organ transplants'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "The exact date when antibiotic resistance was first observed in a hospital.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Not mentioned. Fleming warned of it, but a specific first hospital date is not given. (E)."
+                    },
+                    {
+                        "id": "q6",
+                        "prompt": "How the US government contributed to the success of the drug.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "Paragraph B mentions 'invested heavily in deep-tank fermentation techniques'."
+                    },
+                    {
+                        "id": "q7",
+                        "prompt": "Fleming's warning about the incorrect usage of the drug.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D mentions his warning about using them 'too sparingly or for too short a time'."
+                    },
+                    {
+                        "id": "q8",
+                        "prompt": "The specific chemical composition of the mold.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 4,
+                        "explanation": "Not mentioned. (E)."
+                    },
+                    {
+                        "id": "q9",
+                        "prompt": "Examples of how antibiotics are misused today.",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "correct_index": 3,
+                        "explanation": "Paragraph D mentions 'Overuse... in agriculture and unnecessary prescriptions for viral infections'."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "part_id": "p4",
+        "title": "Reading Part 4: Reading for Viewpoints",
+        "timer_seconds": 720,
+        "layout_type": "split_html_form",
+        "left_panel_data": {
+            "html_content": "<h3>Universal Basic Income: Utopia or Ruin?</h3><p>The concept of Universal Basic Income (UBI)—a guaranteed, unconditional monthly cash payment to every citizen—has moved from fringe economic theory to mainstream debate. With the rise of Artificial Intelligence threatening to automate millions of jobs, proponents argue that UBI is the necessary safety net for the 21st century.</p><p>Tech entrepreneur Julian Varga asserts that UBI is essential to decouple survival from labor. \"We are entering an era of 'post-scarcity' where robots do the heavy lifting,\" Varga argues. \"UBI would eliminate extreme poverty and give people the freedom to pursue education, art, or caregiving without the threat of starvation.\" He cites pilot programs in Finland and Canada, which showed that recipients did not stop working; instead, they reported lower stress and better health outcomes. Varga believes this \"human dividend\" would actually spur entrepreneurship by removing the fear of failure.</p><p>However, conservative economist Dr. Sarah Jenkins views UBI as a fiscal impossibility that would trigger hyperinflation. \"Giving everyone free money devalues the currency,\" Jenkins warns. \"Landlords would simply raise rents, and grocery stores would raise prices, negating the benefit.\" Furthermore, she worries about the social cost of removing the incentive to work. Jenkins argues that work provides not just income, but dignity and community. \"A society paid to do nothing will succumb to apathy and vice,\" she contends.</p><p>Sociologist Marcus Thorne offers a nuanced middle ground. He supports the idea of a floor income but argues it must be funded by taxing automation, not income. \"If a robot replaces 100 factory workers, the company should pay a 'robot tax' to fund the UBI,\" Thorne suggests. He warns that without this redistribution mechanism, wealth will concentrate in the hands of the tech elite, leading to a feudal society.</p>"
+        },
+        "right_panel_data": {
+            "section_1": {
+                "type": "multiple_choice",
+                "instructions": "Using the drop-down menu, choose the best option.",
+                "questions": [
+                    {
+                        "id": "q1",
+                        "prompt": "Julian Varga believes UBI is necessary because...",
+                        "options": [
+                            "people are lazy",
+                            "robots will take many jobs",
+                            "governments have too much money",
+                            "inflation is low"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "He mentions 'rise of AI threatening to automate millions of jobs'."
+                    },
+                    {
+                        "id": "q2",
+                        "prompt": "Dr. Jenkins fears that UBI would cause...",
+                        "options": [
+                            "deflation",
+                            "hyperinflation",
+                            "technological stagnation",
+                            "too much employment"
+                        ],
+                        "correct_index": 1,
+                        "explanation": "She warns it would 'trigger hyperinflation' and devalue currency."
+                    },
+                    {
+                        "id": "q3",
+                        "prompt": "According to Varga, pilot programs showed that recipients...",
+                        "options": [
+                            "stopped working entirely",
+                            "wasted the money",
+                            "had better health and continued working",
+                            "moved to other countries"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "He cites data showing 'recipients did not stop working; instead, they reported lower stress'."
+                    },
+                    {
+                        "id": "q4",
+                        "prompt": "Marcus Thorne suggests funding UBI through...",
+                        "options": [
+                            "income tax",
+                            "sales tax",
+                            "a tax on automation/robots",
+                            "printing money"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "He suggests companies should pay a 'robot tax'."
+                    },
+                    {
+                        "id": "q5",
+                        "prompt": "Jenkins argues that work provides...",
+                        "options": [
+                            "only money",
+                            "stress and anxiety",
+                            "dignity and community",
+                            "nothing of value"
+                        ],
+                        "correct_index": 2,
+                        "explanation": "She states: 'work provides not just income, but dignity and community'."
+                    }
+                ]
+            },
+            "section_2": {
+                "type": "fill_in_the_blank",
+                "instructions": "Complete the comment by choosing the best option.",
+                "content_blocks": [
+                    {
+                        "type": "text",
+                        "value": "I lost my trucking job to automation last year, so this hits home. Varga is right; the "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q6",
+                        "options": [
+                            "jobs",
+                            "robots",
+                            "politicians",
+                            "taxes"
+                        ],
+                        "correct_value": "robots",
+                        "explanation": "The context usually implies automation or robots taking jobs."
+                    },
+                    {
+                        "type": "text",
+                        "value": " are coming for blue-collar work whether we like it or not. However, Jenkins has a point about "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q7",
+                        "options": [
+                            "health",
+                            "inflation",
+                            "art",
+                            "freedom"
+                        ],
+                        "correct_value": "inflation",
+                        "explanation": "Jenkins specifically warned about inflation and rising prices."
+                    },
+                    {
+                        "type": "text",
+                        "value": ". If my landlord knows I get an extra $1000 a month, my rent will go up by $1000. We need "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q8",
+                        "options": [
+                            "rent control",
+                            "more banks",
+                            "less money",
+                            "more work"
+                        ],
+                        "correct_value": "rent control",
+                        "explanation": "Rent control would directly address the fear of landlords raising rents."
+                    },
+                    {
+                        "type": "text",
+                        "value": " alongside UBI. Thorne's idea of a "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q9",
+                        "options": [
+                            "human tax",
+                            "robot tax",
+                            "food tax",
+                            "gas tax"
+                        ],
+                        "correct_value": "robot tax",
+                        "explanation": "Thorne suggested taxing automation/robots to fund UBI."
+                    },
+                    {
+                        "type": "text",
+                        "value": " makes the most sense. If Amazon uses robots, Amazon should pay for the society they are "
+                    },
+                    {
+                        "type": "dropdown",
+                        "id": "q10",
+                        "options": [
+                            "building",
+                            "disrupting",
+                            "helping",
+                            "hiring"
+                        ],
+                        "correct_value": "disrupting",
+                        "explanation": "Automation is often described as disrupting existing social/economic structures."
+                    },
+                    {
+                        "type": "text",
+                        "value": "."
+                    }
+                ]
+            }
+        }
+    }
+]
